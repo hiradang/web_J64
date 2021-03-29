@@ -1,0 +1,28 @@
+:root {
+    --white-color: #fff;
+    --text-color: #333;
+    --black-color: #000;
+    --primary-color: #c62929;
+    --border-color: #dbdbdb;
+}
+
+
+* {
+    box-sizing: inherit;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;  /* ~10px because the default font size is 16px */ 
+    line-height: 1.6rem; /* ~16px*/
+    font-family: 'Open Sans', sans-serif;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    } 
+    to {
+        opacity: 1;
+    }
+}
