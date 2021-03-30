@@ -1,0 +1,119 @@
+.header {
+    box-shadow: 0px 4px 4px #f5f5f5;
+}
+
+.header__navbar {
+    display: flex;
+    align-items: center;
+    height: 80px;
+}
+
+.header__navbar-logo-img {
+    height: 60px;
+}
+
+.header__navbar-list {
+    display: flex;
+    flex: 1;
+    justify-content: flex-end;
+    list-style: none;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+}
+
+.header__navbar-item {
+    position: relative;
+    margin: 0 15px;
+    padding: 0 10px;
+}
+
+.header__navbar-item:hover .header__navbar-select {
+    display: block;
+}
+
+.header__navbar-link {
+    text-decoration: none;
+    font-size: 1.5rem;
+    color: var(--black-color);
+    font-weight: 700;
+    padding: 10px 0;
+}
+
+.header__navbar-link:hover::after {
+    opacity: 1;
+    transform: translateY(0px);
+}
+
+.header__navbar-link::after {
+    position: absolute;
+    content: "";
+    left: 0;
+    right: 0;
+    top: 32px;
+    height: 2px;
+    background-color: var(--primary-color);
+    opacity: 0;
+    transform: translateY(20px);
+    transition: ease 0.2s;
+}
+
+.header__navbar-link:hover {
+    color: var(--primary-color);
+}
+
+.header__navbar-icon {
+    position: relative;
+    margin-left: 5px;
+    font-size: 1rem;
+    top: -2px;
+}
+
+.header__navbar-select {
+    position: absolute;
+    left: -20px;
+    right: -20px;
+    top: calc(100% + 32px);
+    display: none;
+}
+
+.header__navbar-select-list {
+    list-style: none;
+    padding-left: 0;
+    background-color: var(--black-color);
+    padding: 10px 0;
+    border-radius: 2px;
+}
+
+.header__navbar-select-item {
+    padding: 0 30px;
+    position: relative;
+}
+
+.header__navbar-select-item::after {
+    position: absolute;
+    content: "";
+    height: 1px;
+    background-color: #393939;
+    bottom: 0;
+    left: 30px;
+    right: 30px;
+}
+
+.header__navbar-select-item:last-child::after {
+    display: none;
+}
+
+.header__navbar-select-link {
+    position: relative;
+    text-decoration: none;
+    color: #a7a7a7;
+    font-size: 1.5rem;
+    font-weight: 700;
+    display: block;
+    padding: 15px 0;
+}
+
+.header__navbar-select-link:hover {
+    color: var(--white-color);
+}
