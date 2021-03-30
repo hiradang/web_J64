@@ -4,6 +4,8 @@
     --black-color: #000;
     --primary-color: #c62929;
     --border-color: #dbdbdb;
+
+    --header-navbar-height: 80px;
 }
 
 
@@ -14,8 +16,9 @@
 html {
     box-sizing: border-box;
     font-size: 62.5%;  /* ~10px because the default font size is 16px */ 
-    line-height: 1.6rem; /* ~16px*/
+    line-height: 2rem; /* ~20px*/
     font-family: 'Open Sans', sans-serif;
+    scroll-behavior: smooth;
 }
 
 @keyframes fadeIn {
@@ -25,4 +28,31 @@ html {
     to {
         opacity: 1;
     }
+}
+
+/* See more button */
+
+.see-more-btn {
+    text-align: center;
+}
+
+.see-more-link {
+    background-color: var(--primary-color);
+    color: var(--white-color);
+    text-decoration: none;
+    font-size: 1.4rem;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+a .see-more-icon {
+    display: none;
+}
+
+.see-more-link:hover {
+    background-color: #ca4343;
+}
+
+.see-more-link:hover .see-more-icon {
+    display: inline-block;
 }

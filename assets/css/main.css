@@ -1,5 +1,14 @@
+/* Header */
+
+
 .header {
     box-shadow: 0px 4px 4px #f5f5f5;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 100;
+    background-color: var(--white-color);
 }
 
 .header__navbar {
@@ -36,8 +45,10 @@
     text-decoration: none;
     font-size: 1.5rem;
     color: var(--black-color);
-    font-weight: 700;
+    font-weight: 600;
     padding: 10px 0;
+    display: block;
+    min-width: 140px;
 }
 
 .header__navbar-link:hover::after {
@@ -58,6 +69,16 @@
     transition: ease 0.2s;
 }
 
+.header__navbar-link::before {
+    content: "";
+    /* background-color: red; */
+    position: absolute;
+    height: 50px;
+    top: 32px;
+    left: -20px;
+    right: -20px;
+}
+
 .header__navbar-link:hover {
     color: var(--primary-color);
 }
@@ -73,8 +94,9 @@
     position: absolute;
     left: -20px;
     right: -20px;
-    top: calc(100% + 32px);
+    top: calc(100% + 24px);
     display: none;
+    box-shadow: 0 0px 3px #fff;
 }
 
 .header__navbar-select-list {
@@ -116,4 +138,134 @@
 
 .header__navbar-select-link:hover {
     color: var(--white-color);
+}
+
+/* Banner */
+
+.content {
+    padding-bottom: 60px;
+    margin-top: var(--header-navbar-height);
+}
+
+.content-heading {
+    font-size: 3.2rem;
+    color: var(--primary-color);
+    font-weight: 600;
+}
+
+.banner-img {
+    width: 100%;
+}
+
+/* Study Intro */
+
+.study-intro {
+    display: flex;
+    height: 360px;
+}
+
+.intro-text-part {
+    margin-right: 10px; 
+    height: 360px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.intro-heading {
+    margin: 0;
+}
+
+.intro-desc {
+    font-size: 1.4rem;
+    text-align: justify;
+    line-height: 2rem;
+    color: var(--text-color);
+}
+
+.intro-img {
+    width: 100%;
+    border-radius: 2px;
+    box-shadow: 0 0 2px #ccc;
+}
+
+
+/* Courses */
+
+.courses {
+    /* height: 700px; */
+}
+
+.courses-heading {
+    text-align: center;
+}
+
+.course-item {
+    min-height: 450px;
+    position: relative;
+}
+
+.couse-img {
+    width: 100%;
+}
+
+.course-name {
+    font-size: 2rem;
+    font-weight: 600;
+    padding: 20px 0;
+}
+
+.course-desc {
+    font-size: 1.4rem;
+    text-align: justify;
+    line-height: 2.4rem;
+    padding-bottom: 20px;
+}
+
+.course-see-more {
+    text-decoration: none;
+    font-size: 1.6rem;
+    text-align: center;
+    color: var(--primary-color);
+    font-weight: 600;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 24px;
+}
+
+.course-see-more:hover {
+    transform: scale(1.2);
+    animation: liner .2s;
+}
+
+
+/* Story of J Class */
+
+.story {
+    display: flex;
+}
+
+.story-text-part {
+    font-size: 1.4rem;
+    line-height: 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 360px;
+}
+
+.story-desc {
+    margin-top: -50px;
+    text-align: justify;
+}
+
+.story-heading {
+    margin-top: 30px;
+}
+
+.story-img {
+    width: 100%;
+    border-radius: 2px;
+    box-shadow: 0 0 2px #ccc;
 }
