@@ -1,6 +1,5 @@
 /* Header */
 
-
 .header {
     box-shadow: 0px 4px 4px #f5f5f5;
     position: fixed;
@@ -15,6 +14,7 @@
     display: flex;
     align-items: center;
     height: 80px;
+    position: relative;;
 }
 
 .header__navbar-logo-img {
@@ -71,7 +71,7 @@
 
 .header__navbar-link::before {
     content: "";
-    /* background-color: red; */
+    background-color: transparent;
     position: absolute;
     height: 50px;
     top: 32px;
@@ -140,11 +140,51 @@
     color: var(--white-color);
 }
 
+/* Mobile menu */
+
+.navbar-icon {
+    font-size: 2.4rem;
+    color: var(--black-color);
+    display: none;
+    position: absolute;
+    right: 10px;
+}
+
+.navbar__mobile {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    top: var(--header-navbar-height);
+    width: 70%;
+    background-color: rgb(202, 187, 187);
+    display: none;
+}
+
+.mobile-navbar-list {
+    list-style: none;
+    padding: 10px;
+    margin: 0;
+}
+
+.mobile-navbar-item {
+    border-bottom: 1px solid #fff;
+}
+
+.mobile-navbar-link {
+    text-decoration: none;
+    font-size: 1.4rem;
+    color: #5e5959;
+    display: block;
+    font-weight: 600;
+    padding: 20px 20px;
+}
+
+
+
 /* Banner */
 
 .content {
     padding-bottom: 60px;
-    margin-top: var(--header-navbar-height);
 }
 
 .content-heading {
@@ -157,29 +197,32 @@
     width: 100%;
 }
 
+.banner {
+    margin-top: var(--header-navbar-height);
+}
+
 /* Study Intro */
 
 .study-intro {
     display: flex;
-    height: 360px;
 }
 
 .intro-text-part {
     margin-right: 10px; 
-    height: 360px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
+}
+
+.intro-see-more {
+    margin: 40px 0;
 }
 
 .intro-heading {
-    margin: 0;
+    margin: 10px 0 20px 0;
 }
 
 .intro-desc {
     font-size: 1.4rem;
     text-align: justify;
-    line-height: 2rem;
+    line-height: 2.4rem;
     color: var(--text-color);
 }
 
@@ -192,34 +235,36 @@
 
 /* Courses */
 
-.courses {
-    /* height: 700px; */
+.container .courses {
+    background-color: var(--content-background-color);
 }
 
-.courses-heading {
+.container .courses-heading {
     text-align: center;
+    padding: 32px 0 20px 0;
 }
 
-.course-item {
-    min-height: 450px;
+.container .course-item {
+    /* min-height: 450px; */
     position: relative;
 }
 
-.couse-img {
+.course-img {
     width: 100%;
 }
 
 .course-name {
     font-size: 2rem;
     font-weight: 600;
-    padding: 20px 0;
+    padding: 20px 10px;
+    margin: 0;
 }
 
 .course-desc {
     font-size: 1.4rem;
     text-align: justify;
     line-height: 2.4rem;
-    padding-bottom: 20px;
+    padding: 0 10px 20px 10px;
 }
 
 .course-see-more {
@@ -228,10 +273,9 @@
     text-align: center;
     color: var(--primary-color);
     font-weight: 600;
-    position: absolute;
-    left: 0;
-    right: 0;
-    bottom: 24px;
+    text-align: center;
+    display: block;
+    padding: 10px 0 20px 0;
 }
 
 .course-see-more:hover {
@@ -242,22 +286,18 @@
 
 /* Story of J Class */
 
-.story {
-    display: flex;
-}
-
 .story-text-part {
     font-size: 1.4rem;
-    line-height: 3rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    height: 360px;
+    line-height: 2.4rem;
+    margin-left: 60px;
 }
 
 .story-desc {
-    margin-top: -50px;
     text-align: justify;
+}
+
+.story-detail {
+    margin-bottom: 20px;
 }
 
 .story-heading {
@@ -268,4 +308,68 @@
     width: 100%;
     border-radius: 2px;
     box-shadow: 0 0 2px #ccc;
+}
+
+.story-see-more {
+    padding: 10px 0;
+}
+
+/* Japanese culture */
+
+.culture {
+    background-color: var(--content-background-color);
+}
+
+.culture-heading {
+    text-align: center;
+    padding: 32px 0 20px 0;
+    margin: 0;
+}
+
+.culture-item {
+    position: relative;
+}
+
+.culture-item-heading {
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 600;
+    margin: 0;
+}
+
+.culture-item-desc {
+    text-align: center;
+    font-style: italic;
+    font-size: 1.4rem;
+    padding: 20px 10px;
+}
+
+.culture-item-img {
+    width: 100%;
+    border-radius: 5px;
+    border: solid 2px var(--border-color);
+}
+
+.culture-see-more {
+    bottom: -50px;
+    padding: 20px 0;
+}
+
+/* Honor students */
+
+.honor-heading {
+    text-align: center;
+    margin: 0;
+    padding-bottom: 36px;
+}
+
+.honor-student-img {
+    width: 100%;
+}
+
+/* Footer */
+
+.footer {
+    height: 200px;
+    background-color: var(--content-background-color);
 }
