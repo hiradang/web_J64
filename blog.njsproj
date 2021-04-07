@@ -1,0 +1,222 @@
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">14.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+    <Name>blog</Name>
+    <RootNamespace>blog</RootNamespace>
+    <SaveNodeJsSettingsInProjectFile>True</SaveNodeJsSettingsInProjectFile>
+  </PropertyGroup>
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>785851d4-8885-4e3b-a0c7-039e8530a198</ProjectGuid>
+    <ProjectHome>.</ProjectHome>
+    <StartupFile>src\server.js</StartupFile>
+    <SearchPath>
+    </SearchPath>
+    <WorkingDirectory>.</WorkingDirectory>
+    <OutputPath>.</OutputPath>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <ProjectTypeGuids>{3AF33F2E-1136-4D97-BBB7-1795711AC8B8};{349c5851-65df-11da-9384-00065b846f21};{9092AA53-FB77-4645-B42D-1CCCA6BD08BD}</ProjectTypeGuids>
+    <NodejsPort>1337</NodejsPort>
+    <StartWebBrowser>True</StartWebBrowser>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <DebugSymbols>true</DebugSymbols>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <DebugSymbols>true</DebugSymbols>
+  </PropertyGroup>
+  <ItemGroup>
+    <Content Include=".gitignore" />
+    <Content Include="src\public\assets\css\base.css" />
+    <Content Include="src\public\assets\css\grid.css" />
+    <Content Include="src\public\assets\css\main.css" />
+    <Content Include="src\public\assets\css\responsive.css" />
+    <Content Include="src\public\assets\fonts\attribution.js" />
+    <Content Include="src\public\assets\fonts\css\all.css" />
+    <Content Include="src\public\assets\fonts\css\all.min.css" />
+    <Content Include="src\public\assets\fonts\css\brands.css" />
+    <Content Include="src\public\assets\fonts\css\brands.min.css" />
+    <Content Include="src\public\assets\fonts\css\fontawesome.css" />
+    <Content Include="src\public\assets\fonts\css\fontawesome.min.css" />
+    <Content Include="src\public\assets\fonts\css\regular.css" />
+    <Content Include="src\public\assets\fonts\css\regular.min.css" />
+    <Content Include="src\public\assets\fonts\css\solid.css" />
+    <Content Include="src\public\assets\fonts\css\solid.min.css" />
+    <Content Include="src\public\assets\fonts\css\svg-with-js.css" />
+    <Content Include="src\public\assets\fonts\css\svg-with-js.min.css" />
+    <Content Include="src\public\assets\fonts\css\v4-shims.css" />
+    <Content Include="src\public\assets\fonts\css\v4-shims.min.css" />
+    <Content Include="src\public\assets\fonts\js\all.js" />
+    <Content Include="src\public\assets\fonts\js\all.min.js" />
+    <Content Include="src\public\assets\fonts\js\brands.js" />
+    <Content Include="src\public\assets\fonts\js\brands.min.js" />
+    <Content Include="src\public\assets\fonts\js\conflict-detection.js" />
+    <Content Include="src\public\assets\fonts\js\conflict-detection.min.js" />
+    <Content Include="src\public\assets\fonts\js\fontawesome.js" />
+    <Content Include="src\public\assets\fonts\js\fontawesome.min.js" />
+    <Content Include="src\public\assets\fonts\js\regular.js" />
+    <Content Include="src\public\assets\fonts\js\regular.min.js" />
+    <Content Include="src\public\assets\fonts\js\solid.js" />
+    <Content Include="src\public\assets\fonts\js\solid.min.js" />
+    <Content Include="src\public\assets\fonts\js\v4-shims.js" />
+    <Content Include="src\public\assets\fonts\js\v4-shims.min.js" />
+    <Content Include="src\public\assets\fonts\less\brands.less" />
+    <Content Include="src\public\assets\fonts\less\fontawesome.less" />
+    <Content Include="src\public\assets\fonts\less\regular.less" />
+    <Content Include="src\public\assets\fonts\less\solid.less" />
+    <Content Include="src\public\assets\fonts\less\v4-shims.less" />
+    <Content Include="src\public\assets\fonts\less\_animated.less" />
+    <Content Include="src\public\assets\fonts\less\_bordered-pulled.less" />
+    <Content Include="src\public\assets\fonts\less\_core.less" />
+    <Content Include="src\public\assets\fonts\less\_fixed-width.less" />
+    <Content Include="src\public\assets\fonts\less\_icons.less" />
+    <Content Include="src\public\assets\fonts\less\_larger.less" />
+    <Content Include="src\public\assets\fonts\less\_list.less" />
+    <Content Include="src\public\assets\fonts\less\_mixins.less" />
+    <Content Include="src\public\assets\fonts\less\_rotated-flipped.less" />
+    <Content Include="src\public\assets\fonts\less\_screen-reader.less" />
+    <Content Include="src\public\assets\fonts\less\_shims.less" />
+    <Content Include="src\public\assets\fonts\less\_stacked.less" />
+    <Content Include="src\public\assets\fonts\less\_variables.less" />
+    <Content Include="src\public\assets\fonts\LICENSE.txt" />
+    <Content Include="src\public\assets\fonts\metadata\categories.yml" />
+    <Content Include="src\public\assets\fonts\metadata\icons.json" />
+    <Content Include="src\public\assets\fonts\metadata\icons.yml" />
+    <Content Include="src\public\assets\fonts\metadata\shims.json" />
+    <Content Include="src\public\assets\fonts\metadata\shims.yml" />
+    <Content Include="src\public\assets\fonts\metadata\sponsors.yml" />
+    <Content Include="src\public\assets\fonts\scss\brands.scss" />
+    <Content Include="src\public\assets\fonts\scss\fontawesome.scss" />
+    <Content Include="src\public\assets\fonts\scss\regular.scss" />
+    <Content Include="src\public\assets\fonts\scss\solid.scss" />
+    <Content Include="src\public\assets\fonts\scss\v4-shims.scss" />
+    <Content Include="src\public\assets\fonts\scss\_animated.scss" />
+    <Content Include="src\public\assets\fonts\scss\_bordered-pulled.scss" />
+    <Content Include="src\public\assets\fonts\scss\_core.scss" />
+    <Content Include="src\public\assets\fonts\scss\_fixed-width.scss" />
+    <Content Include="src\public\assets\fonts\scss\_icons.scss" />
+    <Content Include="src\public\assets\fonts\scss\_larger.scss" />
+    <Content Include="src\public\assets\fonts\scss\_list.scss" />
+    <Content Include="src\public\assets\fonts\scss\_mixins.scss" />
+    <Content Include="src\public\assets\fonts\scss\_rotated-flipped.scss" />
+    <Content Include="src\public\assets\fonts\scss\_screen-reader.scss" />
+    <Content Include="src\public\assets\fonts\scss\_shims.scss" />
+    <Content Include="src\public\assets\fonts\scss\_stacked.scss" />
+    <Content Include="src\public\assets\fonts\scss\_variables.scss" />
+    <Content Include="src\public\assets\fonts\sprites\brands.svg" />
+    <Content Include="src\public\assets\fonts\sprites\regular.svg" />
+    <Content Include="src\public\assets\fonts\sprites\solid.svg" />
+    <Content Include="src\public\assets\fonts\webfonts\fa-brands-400.eot" />
+    <Content Include="src\public\assets\fonts\webfonts\fa-brands-400.svg" />
+    <Content Include="src\public\assets\fonts\webfonts\fa-brands-400.ttf" />
+    <Content Include="src\public\assets\fonts\webfonts\fa-brands-400.woff" />
+    <Content Include="src\public\assets\fonts\webfonts\fa-brands-400.woff2" />
+    <Content Include="src\public\assets\fonts\webfonts\fa-regular-400.eot" />
+    <Content Include="src\public\assets\fonts\webfonts\fa-regular-400.svg" />
+    <Content Include="src\public\assets\fonts\webfonts\fa-regular-400.ttf" />
+    <Content Include="src\public\assets\fonts\webfonts\fa-regular-400.woff" />
+    <Content Include="src\public\assets\fonts\webfonts\fa-regular-400.woff2" />
+    <Content Include="src\public\assets\fonts\webfonts\fa-solid-900.eot" />
+    <Content Include="src\public\assets\fonts\webfonts\fa-solid-900.svg" />
+    <Content Include="src\public\assets\fonts\webfonts\fa-solid-900.ttf" />
+    <Content Include="src\public\assets\fonts\webfonts\fa-solid-900.woff" />
+    <Content Include="src\public\assets\fonts\webfonts\fa-solid-900.woff2" />
+    <Content Include="src\public\assets\img\banner-sensei.jpg" />
+    <Content Include="src\public\assets\img\course-intro-img.jpg" />
+    <Content Include="src\public\assets\img\courses\course-1.jpg" />
+    <Content Include="src\public\assets\img\courses\course-2.jpg" />
+    <Content Include="src\public\assets\img\courses\course-3.jpg" />
+    <Content Include="src\public\assets\img\culture\festival.jpg" />
+    <Content Include="src\public\assets\img\culture\food.jpg" />
+    <Content Include="src\public\assets\img\honor-students\student1.jpg" />
+    <Content Include="src\public\assets\img\logo.png" />
+    <Content Include="src\public\assets\img\story-img.jpg" />
+    <Content Include="index.html" />
+    <Content Include="src\resrc\views\home.hbs">
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include="src\resrc\views\layouts\main.hbs">
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include="src\resrc\views\partials\footer.hbs">
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include="src\resrc\views\partials\header.hbs">
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include="src\server.js" />
+    <Content Include="package.json" />
+    <Content Include="README.md" />
+    <Content Include="Web-K64J\Giao diện\Banner - ảnh các sensei.jpg" />
+    <Content Include="Web-K64J\Giao diện\Capture.PNG" />
+    <Content Include="Web-K64J\Giao diện\header &amp; footer.png" />
+    <Content Include="Web-K64J\Giao diện\logo.PNG" />
+    <Content Include="Web-K64J\Giao diện\web-japan-home.psd" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="src\public\assets\" />
+    <Folder Include="src\public\assets\css\" />
+    <Folder Include="src\public\assets\fonts\" />
+    <Folder Include="src\public\assets\fonts\css\" />
+    <Folder Include="src\public\assets\fonts\js\" />
+    <Folder Include="src\public\assets\fonts\less\" />
+    <Folder Include="src\public\assets\fonts\metadata\" />
+    <Folder Include="src\public\assets\fonts\scss\" />
+    <Folder Include="src\public\assets\fonts\sprites\" />
+    <Folder Include="src\public\assets\fonts\webfonts\" />
+    <Folder Include="src\public\assets\img\" />
+    <Folder Include="src\public\assets\img\courses\" />
+    <Folder Include="src\public\assets\img\culture\" />
+    <Folder Include="src\public\assets\img\honor-students\" />
+    <Folder Include="src\public\" />
+    <Folder Include="src\resrc\" />
+    <Folder Include="src\" />
+    <Folder Include="src\resrc\views\" />
+    <Folder Include="src\resrc\views\layouts\" />
+    <Folder Include="src\resrc\views\partials\" />
+    <Folder Include="Web-K64J\" />
+    <Folder Include="Web-K64J\Giao diện\" />
+  </ItemGroup>
+  <Import Project="$(VSToolsPath)\Node.js Tools\Microsoft.NodejsToolsV2.targets" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>0</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:48022/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>True</UseCustomServer>
+          <CustomServerUrl>http://localhost:1337</CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}" User="">
+        <WebProjectProperties>
+          <StartPageUrl>
+          </StartPageUrl>
+          <StartAction>CurrentPage</StartAction>
+          <AspNetDebugging>True</AspNetDebugging>
+          <SilverlightDebugging>False</SilverlightDebugging>
+          <NativeDebugging>False</NativeDebugging>
+          <SQLDebugging>False</SQLDebugging>
+          <ExternalProgram>
+          </ExternalProgram>
+          <StartExternalURL>
+          </StartExternalURL>
+          <StartCmdLineArguments>
+          </StartCmdLineArguments>
+          <StartWorkingDirectory>
+          </StartWorkingDirectory>
+          <EnableENC>False</EnableENC>
+          <AlwaysStartWebServerOnDebug>False</AlwaysStartWebServerOnDebug>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>
