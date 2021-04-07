@@ -1,0 +1,469 @@
+/* Header */
+
+.header {
+    box-shadow: 0px 4px 4px #f5f5f5;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 100;
+    background-color: var(--white-color);
+}
+
+.header__navbar {
+    display: flex;
+    align-items: center;
+    height: 80px;
+    position: relative;;
+}
+
+.header__navbar-logo-img {
+    height: 60px;
+}
+
+.header__navbar-list {
+    display: flex;
+    flex: 1;
+    justify-content: flex-end;
+    list-style: none;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+}
+
+.header__navbar-item {
+    position: relative;
+    margin: 0 15px;
+    padding: 0 10px;
+}
+
+.header__navbar-item:hover .header__navbar-select {
+    display: block;
+}
+
+.header__navbar-link {
+    text-decoration: none;
+    font-size: 1.5rem;
+    color: var(--black-color);
+    font-weight: 600;
+    padding: 10px 0;
+    display: block;
+    min-width: 140px;
+}
+
+.header__navbar-link:hover::after {
+    opacity: 1;
+    transform: translateY(0px);
+}
+
+.header__navbar-link::after {
+    position: absolute;
+    content: "";
+    left: 0;
+    right: 0;
+    top: 32px;
+    height: 2px;
+    background-color: var(--primary-color);
+    opacity: 0;
+    transform: translateY(20px);
+    transition: ease 0.2s;
+}
+
+.header__navbar-link::before {
+    content: "";
+    background-color: transparent;
+    position: absolute;
+    height: 50px;
+    top: 32px;
+    left: -20px;
+    right: -20px;
+}
+
+.header__navbar-link:hover {
+    color: var(--primary-color);
+}
+
+.header__navbar-icon {
+    position: relative;
+    margin-left: 5px;
+    font-size: 1rem;
+    top: -2px;
+}
+
+.header__navbar-select {
+    position: absolute;
+    left: -20px;
+    right: -20px;
+    top: calc(100% + 24px);
+    display: none;
+    box-shadow: 0 0px 3px #fff;
+}
+
+.header__navbar-select-list {
+    list-style: none;
+    padding-left: 0;
+    background-color: var(--black-color);
+    padding: 10px 0;
+    border-radius: 2px;
+}
+
+.header__navbar-select-item {
+    padding: 0 30px;
+    position: relative;
+}
+
+.header__navbar-select-item::after {
+    position: absolute;
+    content: "";
+    height: 1px;
+    background-color: #393939;
+    bottom: 0;
+    left: 30px;
+    right: 30px;
+}
+
+.header__navbar-select-item:last-child::after {
+    display: none;
+}
+
+.header__navbar-select-link {
+    position: relative;
+    text-decoration: none;
+    color: #a7a7a7;
+    font-size: 1.5rem;
+    font-weight: 700;
+    display: block;
+    padding: 15px 0;
+}
+
+.header__navbar-select-link:hover {
+    color: var(--white-color);
+}
+
+/* Mobile menu */
+
+.navbar-icon {
+    font-size: 2.4rem;
+    color: var(--black-color);
+    display: none;
+    position: absolute;
+    right: 10px;
+}
+
+.navbar__mobile {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    top: var(--header-navbar-height);
+    width: 70%;
+    background-color: rgb(202, 187, 187);
+    display: none;
+}
+
+.mobile-navbar-list {
+    list-style: none;
+    padding: 10px;
+    margin: 0;
+}
+
+.mobile-navbar-item {
+    border-bottom: 1px solid #fff;
+}
+
+.mobile-navbar-link {
+    text-decoration: none;
+    font-size: 1.4rem;
+    color: #5e5959;
+    display: block;
+    font-weight: 600;
+    padding: 20px 20px;
+}
+
+
+
+/* Banner */
+
+.content {
+    padding-bottom: 60px;
+}
+
+.content-heading {
+    font-size: 3.2rem;
+    color: var(--primary-color);
+    font-weight: 600;
+}
+
+.banner-img {
+    width: 100%;
+}
+
+.banner {
+    margin-top: var(--header-navbar-height);
+}
+
+/* Study Intro */
+
+.study-intro {
+    display: flex;
+}
+
+.intro-text-part {
+    margin-right: 10px; 
+}
+
+.intro-see-more {
+    margin: 40px 0;
+}
+
+.intro-heading {
+    margin: 10px 0 20px 0;
+}
+
+.intro-desc {
+    font-size: 1.4rem;
+    text-align: justify;
+    line-height: 2.4rem;
+    color: var(--text-color);
+}
+
+.intro-img {
+    width: 100%;
+    border-radius: 2px;
+    box-shadow: 0 0 2px #ccc;
+}
+
+
+/* Courses */
+
+.container .courses {
+    background-color: var(--content-background-color);
+}
+
+.container .courses-heading {
+    text-align: center;
+    padding: 32px 0 20px 0;
+}
+
+.container .course-item {
+    /* min-height: 450px; */
+    position: relative;
+}
+
+.course-img {
+    width: 100%;
+}
+
+.course-name {
+    font-size: 2rem;
+    font-weight: 600;
+    padding: 20px 10px;
+    margin: 0;
+}
+
+.course-desc {
+    font-size: 1.4rem;
+    text-align: justify;
+    line-height: 2.4rem;
+    padding: 0 10px 20px 10px;
+}
+
+.course-see-more {
+    text-decoration: none;
+    font-size: 1.6rem;
+    text-align: center;
+    color: var(--primary-color);
+    font-weight: 600;
+    text-align: center;
+    display: block;
+    padding: 10px 0 20px 0;
+}
+
+.course-see-more:hover {
+    transform: scale(1.2);
+    animation: liner .2s;
+}
+
+
+/* Story of J Class */
+
+.story-text-part {
+    font-size: 1.4rem;
+    line-height: 2.4rem;
+    margin-left: 60px;
+}
+
+.story-desc {
+    text-align: justify;
+}
+
+.story-detail {
+    margin-bottom: 20px;
+}
+
+.story-heading {
+    margin-top: 30px;
+}
+
+.story-img {
+    width: 100%;
+    border-radius: 2px;
+    box-shadow: 0 0 2px #ccc;
+}
+
+.story-see-more {
+    padding: 10px 0;
+}
+
+/* Japanese culture */
+
+.culture {
+    background-color: var(--content-background-color);
+}
+
+.culture-heading {
+    text-align: center;
+    padding: 32px 0 20px 0;
+    margin: 0;
+}
+
+.culture-item {
+    position: relative;
+}
+
+.culture-item-heading {
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 600;
+    margin: 0;
+}
+
+.culture-item-desc {
+    text-align: center;
+    font-style: italic;
+    font-size: 1.4rem;
+    padding: 20px 10px;
+}
+
+.culture-item-img {
+    width: 100%;
+    border-radius: 5px;
+    border: solid 2px var(--border-color);
+}
+
+.culture-see-more {
+    bottom: -50px;
+    padding: 20px 0;
+}
+
+/* Honor students */
+
+.honor-heading {
+    text-align: center;
+    margin: 0;
+    padding-bottom: 36px;
+}
+
+.honor-student-img {
+    width: 100%;
+}
+
+/* Footer */
+
+.footer {
+    background-color: #f7f7f7;
+}
+
+.contact {
+    padding: 60px 0 30px 0;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.contact__logo {
+    height: 100px;
+}
+
+.contact__heading {
+    position: relative;
+    margin: 0;
+    padding: 20px 0 30px 0;
+    font-size: 1.6rem;
+    color: #4d5969;
+    z-index: 0;
+}
+
+.contact__heading::before {
+    position: absolute;
+    content: "";
+    width: 38px;
+    height: 38px;
+    background-color: #e4e4e4;
+    border-radius: 50%;
+    z-index: -1;
+    top: 50%;
+    left: 0;
+    transform: translate(-50%, calc(-50% - 5px));
+}
+
+.contact-list {
+    margin: 10px 0;
+    padding-left: 0;
+    list-style: none;
+}
+
+.contact-item {
+    padding-bottom: 10px;
+    line-height: 1.8;
+}
+
+.contact-link {
+    display: block;
+    text-decoration: none;
+    font-size: 1.4rem;
+    color: #949ba4;
+    padding: 5px 5px;
+}
+
+.contact-link:hover {
+    color: #4d5969;
+    text-decoration: underline;
+}
+
+.policy {
+    padding: 30px 0;
+    display: flex;
+
+}
+
+.copy-right {
+    display: flex;
+    align-items: center;
+    flex: 1;
+}
+
+.copy-right__logo {
+    height: 40px;
+    padding: 0 10px;
+}
+
+.copy-right span {
+    display: block;
+    padding: 0 10px;
+    margin: 20px 0 10px 0;
+    font-size: 1.4rem;
+    color: #949BA4;
+}
+
+.social-list {
+    display: flex;
+}
+
+.social-item {
+    text-decoration: none;
+    display: block;
+    margin: 0 12px;
+}
+
+.social-icon {
+    font-size: 3.2rem;
+    color: #949ba4;
+}

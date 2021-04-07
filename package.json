@@ -1,0 +1,22 @@
+{
+  "name": "blog",
+  "version": "0.0.0",
+  "description": "blog",
+  "main": "src/server.js",
+  "author": "lmhuong711",
+  "scripts": {
+    "start": "nodemon --inspect src/server.js"
+  },
+  "keywords": [
+    "blog"
+  ],
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "express-handlebars": "^5.3.0"
+  },
+  "devDependencies": {
+    "morgan": "^1.10.0",
+    "nodemon": "^2.0.7"
+  }
+}
