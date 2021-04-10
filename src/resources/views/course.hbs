@@ -1,0 +1,17 @@
+<div class = "mt-4">
+    <div class = "row">
+
+        {{#each course}}
+        <div class="col-sm-6">
+            <div class="card" style = 'max-length: 200px; margin: 100px 10px 10px 50px' >
+            <img class="card-img-top" src="{{this.image}}" alt="Card image cap" style = 'max-length: 500px; ' >
+            <div class="card-body">
+                <h5 class="card-title">{{this.name}}</h5>
+                <p class="card-text">Description.</p>
+                <a href="#" class="btn btn-primary">Chi tiết</a>
+            </div>
+            </div>
+        </div>
+        {{/each}}
+    </div>
+</div>
