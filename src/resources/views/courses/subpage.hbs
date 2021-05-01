@@ -1,0 +1,46 @@
+<div class="">
+    <div class = "course-subpage container">
+
+        <h1 class="course-title">Khóa học bảng chữ cái Hiragana</h1>
+
+        <div class="course-book">
+            <h1 class="title">Sách tham khảo</h1>
+            <div class = "row">
+                {{#each books}}
+                <div class="col-lg-3">
+                    <a href="" class="item-details-link">
+                        <div class="card" style = 'max-length: 200px; margin: 10px 10px 10px 50px' >
+                            <img class="card-img-top" src="{{this.image}}" alt="Card image cap" style = 'max-length: 500px;'>
+                            <div class="card-body">
+                                <h5 class="card-title">{{this.name}}</h5>
+                                <p class="card-text">Description.</p>
+                                <a href="#" class="btn btn-primary">Chi tiết</a>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                {{/each}}
+            </div>
+        </div>
+
+        <div class="course-video">
+            <h1 class="title">Kho video</h1>
+            <div class = "row">
+                {{#each videos}}
+                <div class="col-lg-3">
+                   <a href="" class="item-details-link">
+                        <div class="card" style = 'max-length: 200px; margin: 10px 10px 10px 50px' >
+                        <img class="card-img-top" src="https://img.youtube.com/vi/{{this.videoID}}/sddefault.jpg" alt="Card image cap" style = 'max-length: 500px;'>
+                        <div class="card-body">
+                            <h5 class="card-title">{{this.name}}</h5>
+                            <p class="card-text">Description.</p>
+                            <a href="#" class="btn btn-primary">Chi tiết</a>
+                        </div>
+                        </div>
+                   </a>
+                </div>
+                {{/each}}
+            </div>
+        </div>
+    </div>
+</div>

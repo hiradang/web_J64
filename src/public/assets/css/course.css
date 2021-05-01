@@ -1,0 +1,63 @@
+/* Course info */
+
+.course-subpage.container {
+    margin-top: var(--header-navbar-height);
+}
+
+.course-subpage .course-title {
+    font-size: 4rem;
+    margin: 100px 0 20px 0;
+    font-weight: 700;
+}
+
+.course-subpage .course-description {
+    font-size: 1.4rem;
+}
+
+.course-subpage .course-goals {
+    list-style: none;
+    padding: 0;
+}
+
+.course-subpage .course-goals-heading {
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+.course-subpage .course-goals-item {
+    font-size: 1.4rem;
+    margin-bottom: 10px;
+}
+
+.course-subpage .course-goals-icon {
+    color: var(--primary-color);
+    padding-right: 4px;
+}
+
+
+.course-subpage.posts-highlight {
+    /* margin-top: var(--header-navbar-height); */
+    margin-top: 100px;
+}
+
+/* Course details */
+
+.course-subpage .course-details {
+    margin-top: 50px;
+}
+
+.course-details-item {
+    margin-bottom: 40px;
+}
+
+.course-details__title {
+
+}
+
+.course-details__link {
+
+}
+
+.course-details-img {
+    
+}
