@@ -1,5 +1,9 @@
 /* Header */
 
+#bootstrap-overrides a {
+    text-decoration: none;
+}
+
 .header {
     box-shadow: 0px 4px 4px #f5f5f5;
     position: fixed;
@@ -267,7 +271,7 @@
     padding: 0 10px 20px 10px;
 }
 
-.course-see-more {
+#bootstrap-overrides .course-see-more {
     text-decoration: none;
     font-size: 1.6rem;
     text-align: center;
@@ -481,3 +485,105 @@
     margin-bottom: 10px;
 }
 
+
+
+
+/* Subpage */
+.page-container {
+    margin-top: var(--header-navbar-height);
+    padding: 40px 0;
+    background-color: #ecf0f5;
+}
+
+.post {
+    background-color: var(--white-color);
+    padding: 20px 60px;
+}
+
+
+
+.post__title {
+    font-size: 22px;
+    color: var(--text-color);
+    margin-bottom: 9px;
+}
+
+.post__content {
+    margin-bottom: 20px;
+}
+
+.post__content-img {
+    text-align: center;
+    margin: 30px 0;
+}
+
+.post__content p,
+.post__content p span,
+.post__content ul li span {
+    font-size: 16px;
+    text-align: justify;
+    line-height: 1.6;
+    margin-bottom: 9px;
+}
+
+.post__content ul li {
+    margin-bottom: 9px;
+}
+
+.post__content p span a {
+    text-decoration: none;
+    color: #000080;
+    font-weight: 600;
+}
+
+.post__performer {
+    padding: 15px 0;
+    border-top: 1px solid #ccc;
+    font-size: 12px;
+    text-align: right;
+}
+
+.posts-highlight {
+
+}
+
+.posts-highlight__title {
+    display: block;
+    background-color: #3e5062;
+    color: var(--white-color);
+    font-size: 16px;
+    padding: 15px 20px;
+    margin: 0;
+    border-radius: 2px;
+    text-transform: uppercase;
+    letter-spacing: 1.2px;
+}
+
+.posts-highlight__list {
+    background-color: var(--white-color);
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.posts-highlight__item {
+    padding: 15px 20px;
+    border-bottom: 1px solid#e5e5e5;
+}
+
+.posts-highlight__link {
+    text-decoration: none;
+    display: flex;
+}
+
+.posts-highlight__img {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+}
+
+.posts-highlight__dsc {
+    font-size: 14px;
+    color: var(--text-color);
+    font-weight: 600;
+}

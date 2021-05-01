@@ -7,8 +7,7 @@ class CourseController {
                 course = course.map(course => course.toObject())
                 res.render('course', {course});
             })
-            .catch(next);
-        
+            .catch(next);   
     }
 
     store(req,res) {

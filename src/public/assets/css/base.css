@@ -37,7 +37,7 @@ html {
     text-align: center;
 }
 
-.see-more-link {
+#bootstrap-overrides .see-more-link {
     background-color: var(--primary-color);
     color: var(--white-color);
     text-decoration: none;
