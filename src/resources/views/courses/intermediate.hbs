@@ -1,0 +1,87 @@
+<div class="grid wide">
+    <div class="row">
+        <div class="col l-9 m-12 c-12">
+            <div class="course-subpage container">
+                <div class="course-info">
+                    <h1 class="course-title" >Khóa tiếng Nhật trung cấp</h1>
+                    <p class="course-description">Khóa học giúp các bạn làm quen với các từ vựng thông dụng và ngữ pháp đơn giản
+                        trong tiếng Nhật
+                    </p>
+                    <ul class="course-goals">
+                        <h1 class="course-goals-heading">Bạn sẽ học được gì?</h1>
+                        <li class="course-goals-item">
+                            <i class="fas fa-check course-goals-icon"></i>
+                            1000 từ vựng thông dụng nhất
+                        </li>
+
+                        <li class="course-goals-item">
+                            <i class="fas fa-check course-goals-icon"></i>
+                            Các ngữ pháp thông dụng theo giáo trình Minna no nihongo
+                        </li>
+
+                        <li class="course-goals-item">
+                            <i class="fas fa-check course-goals-icon"></i>
+                            Các mẫu hội thoại thường dùng
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="course-details">
+                    {{#each course}}
+                    <div class="course-details-item">
+                        <h1 class="course-details__title">
+                            <i class="fas fa-chevron-right"></i>
+                            {{this.description}}
+                        </h1>
+                        
+                        <a href="/courses/intermediate/{{this.name}}" class="course-details__link">
+                            <div class="course-details-img">
+                                <img src="{{this.img}}" alt="">
+                            </div>
+                        </a>
+                    </div>
+                    {{/each}}
+
+                </div>
+
+            </div>
+        </div>
+
+        <div class="col l-3 m-0 c-0">
+            <div class="course-subpage posts-highlight">
+                <h2 class="posts-highlight__title">
+                    Bài viết nối bật
+                </h2>
+
+                <ul class="posts-highlight__list">
+                    <li class="posts-highlight__item">
+                        <a href="" class="posts-highlight__link">
+                            <img src="https://akira.edu.vn/wp-content/uploads/2017/08/phuong-cham-hoc-tap-440x264.jpg" alt="" class="posts-highlight__img">
+                            <div class="posts-highlight__dsc">
+                                <span>Tìm hiểu thêm về các khóa học tiếng Nhật</span>
+                            </div>
+                        </a>
+                    </li>
+
+                    <li class="posts-highlight__item">
+                        <a href="" class="posts-highlight__link">
+                            <img src="https://edu.sun-asterisk.com/wp-content/uploads/2020/10/71c0c8e00a447b74ba9e5a640f4fcff2.jpg" alt="" class="posts-highlight__img">
+                            <div class="posts-highlight__dsc">
+                                <span>Jobfair Sun* sẽ có những công ty nào đang đợi bạn</span>
+                            </div>
+                        </a>
+                    </li>
+
+                    <li class="posts-highlight__item">
+                        <a href="" class="posts-highlight__link">
+                            <img src="https://intertour.vn/uploads/media/news/9320b6ec-b52f-40c0-a93b-7ea65a3f7dad.jpg" alt="" class="posts-highlight__img">
+                            <div class="posts-highlight__dsc">
+                                <span>Tìm hiểu ẩm thực Nhật Bản</span>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>

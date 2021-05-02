@@ -1,4 +1,5 @@
 const Course = require("../models/Course");
+const Item = require("../models/Item");
 const  {multipleMongooseToObject } = require('../../util/mongoose');
 
 class CourseController {
@@ -14,57 +15,57 @@ class CourseController {
 
     // [GET] /courses/beginner
     beginner(req, res, next) {
-        Course.find({})
+        Course.find({level: 'beginner'})
             .then(course => {
-                course = course.map(course => course.toObject())
-                res.render('courses/beginner', {course});
+                res.render('courses/beginner', {
+                    course: multipleMongooseToObject(course)});
             })
             .catch(next);   
     }
 
     // [GET] /courses/intermediate
     intermediate(req, res, next) {
-        Course.find({})
+        Course.find({level: 'intermediate'})
             .then(course => {
-                course = course.map(course => course.toObject())
-                res.render('courses/intermediate', {course});
+                res.render('courses/intermediate', {
+                    course: multipleMongooseToObject(course)});
             })
-            .catch(next);   
+            .catch(next);
     }
 
     // [GET] /courses/jlpt-n3
     jlptN3(req, res, next) {
-        Course.find({})
+        Course.find({level: 'jlpt-n3'})
             .then(course => {
-                course = course.map(course => course.toObject())
-                res.render('courses/jlpt-n3', {course});
+                res.render('courses/jlpt-n3', {
+                    course: multipleMongooseToObject(course)});
             })
-            .catch(next);   
+            .catch(next);
     }
 
-
-
-    // [GET] /courses/beginner:slug
-    showBeginner(req, res, next) {
-        // Course.find({slug: req.params.slug})
-        //     .then(course => {
-        //         course = course.map(course => course.toObject())
-        //         res.render('courses/subpage', {course});
-        //     })
-        //     .catch(next); 
-        
-        Promise.all([Course.find({slug: req.params.slug, type: 'book'}), Course.find({slug: req.params.slug, type: 'video'})])
-            .then(([books, videos]) => {
+    // [GET] /courses/beginner/:slug
+    showList(req, res, next) {
+        Promise.all([Course.findOne({name: req.params.slug}), Item.find({slug: req.params.slug, type: 'book'}), Item.find({slug: req.params.slug, type: 'video'})])
+            .then(([course, books, videos]) => {
                 res.render('courses/subpage', {
+                    course: course.toObject(),
                     books: multipleMongooseToObject(books),
                     videos: multipleMongooseToObject(videos)})
                 })
             .catch(next);    
     }
 
-    store(req,res) {
-        
+
+    // [GET] /courses/beginner/:slug/:id
+    showDetails(req, res, next) {
+        Item.findById(req.params.id)
+            .then(item => {
+                res.render('courses/item-details', {
+                    item: item.toObject()});
+            })
+            .catch(next);     
     }
+
 }
 
 module.exports = new CourseController();

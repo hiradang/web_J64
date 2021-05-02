@@ -27,44 +27,21 @@
                 </div>
 
                 <div class="course-details">
+                    {{#each course}}
                     <div class="course-details-item">
                         <h1 class="course-details__title">
                             <i class="fas fa-chevron-right"></i>
-                            Giới thiệu chung về tiếng Nhật
+                            {{this.description}}
                         </h1>
                         
-                        <a href="/courses/beginner/intro" class="course-details__link">
+                        <a href="/courses/beginner/{{this.name}}" class="course-details__link">
                             <div class="course-details-img">
-                                <img src="/assets/img/courses-subpage/beginner/japanese-intro.png" alt="">
+                                <img src="{{this.img}}" alt=""> 
                             </div>
                         </a>
                     </div>
+                    {{/each}}
 
-                    <div class="course-details-item">
-                        <h1 class="course-details__title">
-                            <i class="fas fa-chevron-right"></i>
-                            Học bảng chữ cái Hiragana
-                        </h1>
-                        
-                        <a href="/courses/beginner/hiragana" class="course-details__link">
-                            <div class="course-details-img">
-                                <img src="/assets/img/courses-subpage/beginner/hiragana.jpg" alt="">
-                            </div>
-                        </a>
-                    </div>
-
-                    <div class="course-details-item">
-                        <h1 class="course-details__title">
-                            <i class="fas fa-chevron-right"></i>
-                            Học bảng chữ cái Katakana
-                        </h1>
-                        
-                        <a href="/courses/beginner/katakana" class="course-details__link">
-                            <div class="course-details-img">
-                                <img src="/assets/img/courses-subpage/beginner/katakana.jpg" alt="">
-                            </div>
-                        </a>
-                    </div>
                 </div>
             </div>
         </div>

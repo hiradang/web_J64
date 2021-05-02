@@ -1,4 +1,3 @@
-const CourseController = require('../app/controllers/CourseController');
 const accountRouter = require('./account');
 const courseRouter = require('./courses');
 const siteRouter = require('./site');
