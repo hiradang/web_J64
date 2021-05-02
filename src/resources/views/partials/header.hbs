@@ -7,10 +7,10 @@
             
             <ul class="header__navbar-list hide-on-mobile-tablet">
                 <li class="header__navbar-item">
-                    <a href="" class="header__navbar-link">
+                    <span class="header__navbar-link">
                         CNTT Nhật Bản
                         <i class="fas fa-chevron-down header__navbar-icon"></i>
-                    </a>
+                    </span>
 
                     <div class="header__navbar-select">
                         <ul class="header__navbar-select-list">
@@ -30,10 +30,10 @@
                 </li>
 
                 <li class="header__navbar-item">
-                    <a href="course" class="header__navbar-link">
+                    <span class="header__navbar-link">
                         Khóa học Tiếng Nhật
                         <i class="fas fa-chevron-down header__navbar-icon"></i>
-                    </a>
+                    </span>
 
                     <div class="header__navbar-select">
                         <ul class="header__navbar-select-list">
@@ -53,33 +53,27 @@
                 </li>
 
                 <li class="header__navbar-item">
-                    <a href="" class="header__navbar-link">
+                    <span class="header__navbar-link">
                         Thông tin Jobfair
                         <i class="fas fa-chevron-down header__navbar-icon"></i>
-                    </a>
+                    </span>
 
                     <div class="header__navbar-select">
                         <ul class="header__navbar-select-list">
-                            <li class="header__navbar-select-item">
-                                <a href="/jobfair/honor" class="header__navbar-select-link">Bảng vàng danh dự</a>
-                            </li>
 
                             <li class="header__navbar-select-item">
                                 <a href="/jobfair/company-info" class="header__navbar-select-link">Thông tin doanh nghiệp</a>
                             </li>
 
-                            <li class="header__navbar-select-item">
-                                <a href="/jobfair/conditions" class="header__navbar-select-link">Điều kiện tham gia</a>
-                            </li>
                         </ul>
                     </div>
                 </li>
 
                 <li class="header__navbar-item">
-                    <a href="" class="header__navbar-link">
+                    <span class="header__navbar-link">
                         Văn hóa Nhật Bản
                         <i class="fas fa-chevron-down header__navbar-icon"></i>
-                    </a>
+                    </span>
 
                     <div class="header__navbar-select">
                         <ul class="header__navbar-select-list">
@@ -96,10 +90,10 @@
 
                 <li class="header__navbar-item">
                     {{#if username}}
-                        <a href="" class="header__navbar-link">
+                        <span class="header__navbar-link">
                         <i class="fas fa-user-circle" style="font-size: 2rem;"></i>
                         {{username}}
-                        </a>
+                        </span>
                         <div class="header__navbar-select">
                         <ul class="header__navbar-select-list">
                             <li class="header__navbar-select-item">
@@ -112,21 +106,21 @@
                         </ul>
                         </div>
                     {{else}}    
-                        <a href="" class="header__navbar-link">
+                        <span class="header__navbar-link">
                         Tài khoản
                         <i class="fas fa-user-circle"  style="font-size: 2rem;"></i>
-                        </a>
+                        </span>
                         <div class="header__navbar-select">
                         <ul class="header__navbar-select-list">
                             <li class="header__navbar-select-item">
                                 <div class="header_navbar-user">
                                     <i class="fas fa-user header_navbar-user-icon"></i>
-                                    <a href="login" class="header__navbar-select-link">Đăng nhập</a>
+                                    <a href="/login" class="header__navbar-select-link">Đăng nhập</a>
                                 </div>
                                 
                                 <div class="header_navbar-user">
                                     <i class="fas fa-user-plus header_navbar-user-icon"></i>
-                                    <a href="signup" class="header__navbar-select-link">Đăng kí</a>
+                                    <a href="/signup" class="header__navbar-select-link">Đăng kí</a>
                                 </div>
                             </li>
                         </ul>

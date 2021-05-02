@@ -1,0 +1,23 @@
+[{
+  "_id": {
+    "$oid": "60711e032359540ff95e9101"
+  },
+  "username": "loanbui",
+  "password": "123456"
+},{
+  "_id": {
+    "$oid": "608be504233ece2c9cbe3175"
+  },
+  "username": "loan",
+  "password": "12345",
+  "slug": "loan",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "608e53cd91e8a031f072781e"
+  },
+  "username": "loan1",
+  "password": "12345",
+  "slug": "loan1",
+  "__v": 0
+}]

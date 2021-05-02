@@ -8,13 +8,13 @@
             <div class = "row">
                 {{#each books}}
                 <div class="col-lg-3">
-                    <a href="{{this.linkBuy}}" class="item-details-link">
+                    <a href="{{this.linkBuy}}" class="item-details-link" target="_blank">
                         <div class="card" style = 'max-length: 200px; margin: 10px 10px 10px 50px' >
                             <img class="card-img-top" src="{{this.image}}" alt="Card image cap" style = 'max-length: 500px;'>
                             <div class="card-body">
                                 <h5 class="card-title">{{this.name}}</h5>
                                 <p class="card-text">Description.</p>
-                                <a href="/courses/beginner/{{this.slug}}/{{this._id}}" class="btn btn-primary">Chi tiết</a>
+                                <a href="/courses/beginner/{{this.linkBuy}}" class="btn btn-primary">Chi tiết</a>
                             </div>
                         </div>
                     </a>

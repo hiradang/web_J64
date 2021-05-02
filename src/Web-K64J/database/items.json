@@ -1,0 +1,385 @@
+[{
+  "_id": {
+    "$oid": "608e3f2ac00abd48bc73a93a"
+  },
+  "image": "http://giaotrinhtiengnhat.com/wp-content/uploads/2017/10/sach-tu-hoc-hiragana-katakana-h%E1%BB%8Dc-thong-qua-nghe-va-viet.jpg",
+  "level": "beginner",
+  "name": "Tự học Hiragana và Katakana",
+  "slug": "hiragana",
+  "type": "book",
+  "linkBuy": "https://giaotrinhtiengnhat.com/sach-tieng-nhat/sach-tu-hoc-hiragana-katakana-hoc-thong-qua-nghe-va-viet.html"
+},{
+  "_id": {
+    "$oid": "608e3f30c00abd48bc73a93b"
+  },
+  "image": "http://giaotrinhtiengnhat.com/wp-content/uploads/2017/10/sach-tu-hoc-hiragana-katakana-h%E1%BB%8Dc-thong-qua-nghe-va-viet.jpg",
+  "level": "beginner",
+  "name": "Tự học Hiragana và Katakana",
+  "slug": "katakana",
+  "type": "book",
+  "linkBuy": "https://giaotrinhtiengnhat.com/sach-tieng-nhat/sach-tu-hoc-hiragana-katakana-hoc-thong-qua-nghe-va-viet.html"
+},{
+  "_id": {
+    "$oid": "608e6444ca6af330b92b9668"
+  },
+  "level": "beginner",
+  "name": "Học Hiragana trong 1 tiếng",
+  "slug": "hiragana",
+  "type": "video",
+  "image": "",
+  "videoID": "6p9Il_j0zjc"
+},{
+  "_id": {
+    "$oid": "608e670eca6af330b92b9669"
+  },
+  "level": "beginner",
+  "name": "10 Days Hiragana - Day 1",
+  "slug": "hiragana",
+  "type": "video",
+  "videoID": "1AMfCY8sm0E"
+},{
+  "_id": {
+    "$oid": "608e67ab7ac08e057cc31213"
+  },
+  "level": "beginner",
+  "name": "10 Days Hiragana - Day 2",
+  "slug": "hiragana",
+  "type": "video",
+  "videoID": "TJJvnCpPK2w"
+},{
+  "_id": {
+    "$oid": "608e67c97ac08e057cc31214"
+  },
+  "level": "beginner",
+  "name": "10 Days Hiragana - Day 3",
+  "slug": "hiragana",
+  "type": "video",
+  "videoID": "vJc9AZ5rSAs"
+},{
+  "_id": {
+    "$oid": "608e67cc7ac08e057cc31215"
+  },
+  "level": "beginner",
+  "name": "10 Days Hiragana - Day 4",
+  "slug": "hiragana",
+  "type": "video",
+  "videoID": "Rt9MNGWCjJs"
+},{
+  "_id": {
+    "$oid": "608e683f7ac08e057cc31216"
+  },
+  "level": "beginner",
+  "name": "10 Days Hiragana - Day 5",
+  "slug": "hiragana",
+  "type": "video",
+  "videoID": "hIEspeJAq-w"
+},{
+  "_id": {
+    "$oid": "608e68847ac08e057cc31217"
+  },
+  "level": "beginner",
+  "name": "10 Days Hiragana - Day 6",
+  "slug": "hiragana",
+  "type": "video",
+  "videoID": "amB7_hBWHaA"
+},{
+  "_id": {
+    "$oid": "608e68897ac08e057cc31218"
+  },
+  "level": "beginner",
+  "name": "10 Days Hiragana - Day 7",
+  "slug": "hiragana",
+  "type": "video",
+  "videoID": "nojeFhIIcJ4"
+},{
+  "_id": {
+    "$oid": "608e688d7ac08e057cc31219"
+  },
+  "level": "beginner",
+  "name": "10 Days Hiragana - Day 8",
+  "slug": "hiragana",
+  "type": "video",
+  "videoID": "Qmrf9AHvI08"
+},{
+  "_id": {
+    "$oid": "608e68917ac08e057cc3121a"
+  },
+  "level": "beginner",
+  "name": "10 Days Hiragana - Day 9",
+  "slug": "hiragana",
+  "type": "video",
+  "videoID": "7GqdGmkyHSg"
+},{
+  "_id": {
+    "$oid": "608e68977ac08e057cc3121b"
+  },
+  "level": "beginner",
+  "name": "10 Days Hiragana - Day 10",
+  "slug": "hiragana",
+  "type": "video",
+  "videoID": "FL1P7jVdi5o"
+},{
+  "_id": {
+    "$oid": "608e6939ca6af330b92b966a"
+  },
+  "level": "beginner",
+  "name": "Học Katakan trong 1 tiếng",
+  "slug": "katakana",
+  "type": "video",
+  "videoID": "s6DKRgtVLGA"
+},{
+  "_id": {
+    "$oid": "608e69977ac08e057cc3121c"
+  },
+  "level": "beginner",
+  "name": "10 Days Katakana - Day 1",
+  "slug": "katakana",
+  "type": "video",
+  "videoID": "AIJhOR8fPkE"
+},{
+  "_id": {
+    "$oid": "608e69bc7ac08e057cc3121d"
+  },
+  "level": "beginner",
+  "name": "10 Days Katakana - Day 2",
+  "slug": "katakana",
+  "type": "video",
+  "videoID": "Fmn22yFOKDU"
+},{
+  "_id": {
+    "$oid": "608e69c17ac08e057cc3121e"
+  },
+  "level": "beginner",
+  "name": "10 Days Katakana - Day 3",
+  "slug": "katakana",
+  "type": "video",
+  "videoID": "MVW-hRHyBmU"
+},{
+  "_id": {
+    "$oid": "608e69c77ac08e057cc3121f"
+  },
+  "level": "beginner",
+  "name": "10 Days Katakana - Day 4",
+  "slug": "katakana",
+  "type": "video",
+  "videoID": "zWU_k7LlZ9c"
+},{
+  "_id": {
+    "$oid": "608ecde7942fbf0aa49726b1"
+  },
+  "image": "https://salt.tikicdn.com/ts/product/74/aa/47/a4fac284bd7a8dca2e780afc40013d3b.jpg",
+  "level": "beginner",
+  "name": "Tự học chữ Hiragana và chữ và chữ Katakana",
+  "slug": "hiragana",
+  "type": "book",
+  "linkBuy": "https://tiki.vn/tu-hoc-chu-hiragana-va-chu-katakana-p15268962.html"
+},{
+  "_id": {
+    "$oid": "608ece86942fbf0aa49726b2"
+  },
+  "image": "http://giaotrinhtiengnhat.com/wp-content/uploads/2017/09/sach-luyen-thi-n5-hajimete-no-nihongo-tango-1000.jpg",
+  "level": "intermediate",
+  "name": "Tango N5",
+  "slug": "vocabulary",
+  "type": "book",
+  "linkBuy": "https://giaotrinhtiengnhat.com/sach-tieng-nhat/sach-luyen-thi-n5-hajimete-no-nihongo-tango-1000.html"
+},{
+  "_id": {
+    "$oid": "608ed0c0942fbf0aa49726b3"
+  },
+  "image": "https://tailieuhoctiengnhat.com/wp-content/uploads/2018/07/tu-hoc-viet-tieng-nhat-can-ban-hiragana.jpg",
+  "level": "beginner",
+  "name": "Tự học viết tiếng Nhật căn bản Hiragana",
+  "slug": "hiragana",
+  "type": "book",
+  "linkBuy": "https://tailieuhoctiengnhat.com/tu-hoc-viet-tieng-nhat-can-ban-hiragana.html"
+},{
+  "_id": {
+    "$oid": "608ed118942fbf0aa49726b4"
+  },
+  "image": "https://tailieuhoctiengnhat.com/wp-content/uploads/2018/07/tu-hoc-viet-tieng-nhat-can-ban-katakana.jpg",
+  "level": "beginner",
+  "name": "Tự học viết tiếng Nhật căn bản Katakana",
+  "slug": "katakana",
+  "type": "book",
+  "linkBuy": "https://tailieuhoctiengnhat.com/tu-hoc-viet-tieng-nhat-can-ban-katakana.html"
+},{
+  "_id": {
+    "$oid": "608ed22a942fbf0aa49726b5"
+  },
+  "level": "beginner",
+  "name": "10 Days Katakana - Day 5",
+  "slug": "katakana",
+  "type": "video",
+  "videoID": "iefOFgci_Xc"
+},{
+  "_id": {
+    "$oid": "608ed25d942fbf0aa49726b6"
+  },
+  "level": "beginner",
+  "name": "10 Days Katakana - Day 6",
+  "slug": "katakana",
+  "type": "video",
+  "videoID": "ENp9n1wx3jA"
+},{
+  "_id": {
+    "$oid": "608ed2b6942fbf0aa49726b7"
+  },
+  "level": "beginner",
+  "name": "10 Days Katakana - Day 7",
+  "slug": "katakana",
+  "type": "video",
+  "videoID": "9AQQwW8wVHA"
+},{
+  "_id": {
+    "$oid": "608ed2d6942fbf0aa49726b8"
+  },
+  "level": "beginner",
+  "name": "10 Days Katakana - Day 8",
+  "slug": "katakana",
+  "type": "video",
+  "videoID": "6tRdJOCzr0c"
+},{
+  "_id": {
+    "$oid": "608ed2f9942fbf0aa49726b9"
+  },
+  "level": "beginner",
+  "name": "10 Days Katakana - Day 9",
+  "slug": "katakana",
+  "type": "video",
+  "videoID": "3BwH69ll40g"
+},{
+  "_id": {
+    "$oid": "608ed2ff942fbf0aa49726ba"
+  },
+  "level": "beginner",
+  "name": "10 Days Katakana - Day 10",
+  "slug": "katakana",
+  "type": "video",
+  "videoID": "k7zqRkJJJgo"
+},{
+  "_id": {
+    "$oid": "608ed3a5942fbf0aa49726bb"
+  },
+  "level": "beginner",
+  "name": "Ngôn ngữ Nhật - The Japanese Language",
+  "slug": "intro",
+  "type": "video",
+  "videoID": "x9-e_3GHrzw"
+},{
+  "_id": {
+    "$oid": "608ed4a1942fbf0aa49726bc"
+  },
+  "image": "https://images-na.ssl-images-amazon.com/images/I/41kl6gqc9XL._SX278_BO1,204,203,200_.jpg",
+  "level": "beginner",
+  "name": "Tự học viết tiếng Nhật căn bản Katakana",
+  "slug": "intro",
+  "type": "book",
+  "linkBuy": "https://www.amazon.com/Japanese-Ultimate-Learning-Language-Paperback/dp/B00QNDTF4A.com/tu-hoc-viet-tieng-nhat-can-ban-katakana.html"
+},{
+  "_id": {
+    "$oid": "608ed588942fbf0aa49726be"
+  },
+  "image": "http://giaotrinhtiengnhat.com/wp-content/uploads/2017/09/sach-luyen-thi-n4-hajimete-no-nihongo-tango-1500-ban-nhat-viet.jpg",
+  "level": "intermediate",
+  "name": "Tango N4",
+  "slug": "vocabulary",
+  "type": "book",
+  "linkBuy": "https://giaotrinhtiengnhat.com/sach-tieng-nhat/sach-luyen-thi-n4-hajimete-no-nihongo-tango-1500-ban-nhat-viet.html"
+},{
+  "_id": {
+    "$oid": "608ed632942fbf0aa49726bf"
+  },
+  "image": "http://giaotrinhtiengnhat.com/wp-content/uploads/2020/06/nihongo-somatome-n4-han-tu-va-tu-vung.jpg",
+  "level": "intermediate",
+  "name": "Soumatome N4 Hán tự và Từ vựng",
+  "slug": "vocabulary",
+  "type": "book",
+  "linkBuy": "https://giaotrinhtiengnhat.com/sach-tieng-nhat/nihongo-somatome-n4-han-tu-va-tu-vung.html"
+},{
+  "_id": {
+    "$oid": "608ed76b942fbf0aa49726c0"
+  },
+  "image": "https://salt.tikicdn.com/ts/product/74/aa/47/a4fac284bd7a8dca2e780afc40013d3b.jpg",
+  "level": "beginner",
+  "name": "Tự học chữ Hiragana và chữ và chữ Katakana",
+  "slug": "katakana",
+  "type": "book",
+  "linkBuy": "https://tiki.vn/tu-hoc-chu-hiragana-va-chu-katakana-p15268962.html"
+},{
+  "_id": {
+    "$oid": "608ed805942fbf0aa49726c1"
+  },
+  "image": "https://vnjpbook.com/wp-content/uploads/2020/09/3636.jpg",
+  "level": "intermediate",
+  "name": "Shinkanzen Master Goi N4",
+  "slug": "vocabulary",
+  "type": "book",
+  "linkBuy": "https://vnjpbook.com/tron-bo-shinkanzen-masuta-n4/"
+},{
+  "_id": {
+    "$oid": "608ed950942fbf0aa49726c3"
+  },
+  "image": "",
+  "level": "intermediate",
+  "name": "20 Japanese Words for Everyday Life - Basic Vocabulary #1",
+  "slug": "vocabulary",
+  "type": "video",
+  "linkBuy": "",
+  "videoID": "8IUlF0ckalA"
+},{
+  "_id": {
+    "$oid": "608ed9df942fbf0aa49726c4"
+  },
+  "image": "",
+  "level": "intermediate",
+  "name": "Learn All 800 JLPT N5 Vocabulary (Complete!)",
+  "slug": "vocabulary",
+  "type": "video",
+  "linkBuy": "",
+  "videoID": "nuI4OgsJv_Q"
+},{
+  "_id": {
+    "$oid": "608eda15942fbf0aa49726c5"
+  },
+  "image": "",
+  "level": "intermediate",
+  "name": "1400 Japanese Vocab & Phrase",
+  "slug": "vocabulary",
+  "type": "video",
+  "linkBuy": "",
+  "videoID": "Vz09Kxs2nj4"
+},{
+  "_id": {
+    "$oid": "608eda30942fbf0aa49726c6"
+  },
+  "image": "",
+  "level": "intermediate",
+  "name": "1400 Japanese Genki 1: 700 Basic Japanese Vocabs",
+  "slug": "vocabulary",
+  "type": "video",
+  "linkBuy": "",
+  "videoID": "0KR9DKZeTqk"
+},{
+  "_id": {
+    "$oid": "608eda8b942fbf0aa49726c7"
+  },
+  "image": "",
+  "level": "intermediate",
+  "name": "Updated Genki 2: 700 Basic Japanese Vocabs",
+  "slug": "vocabulary",
+  "type": "video",
+  "linkBuy": "",
+  "videoID": "VLVgDKaY-1s"
+},{
+  "_id": {
+    "$oid": "608edac3942fbf0aa49726c8"
+  },
+  "image": "",
+  "level": "intermediate",
+  "name": "Learn All 700 JLPT N4 Vocabulary (Complete!)",
+  "slug": "vocabulary",
+  "type": "video",
+  "linkBuy": "",
+  "videoID": "iZypHFBocOg"
+}]

@@ -18,7 +18,7 @@ class CourseController {
         Course.find({level: 'beginner'})
             .then(course => {
                 res.render('courses/beginner', {
-                    course: multipleMongooseToObject(course)});
+                    course: multipleMongooseToObject(course), username: req.user});
             })
             .catch(next);   
     }
@@ -28,7 +28,7 @@ class CourseController {
         Course.find({level: 'intermediate'})
             .then(course => {
                 res.render('courses/intermediate', {
-                    course: multipleMongooseToObject(course)});
+                    course: multipleMongooseToObject(course), username: req.user});
             })
             .catch(next);
     }
@@ -38,7 +38,7 @@ class CourseController {
         Course.find({level: 'jlpt-n3'})
             .then(course => {
                 res.render('courses/jlpt-n3', {
-                    course: multipleMongooseToObject(course)});
+                    course: multipleMongooseToObject(course), username: req.user});
             })
             .catch(next);
     }
@@ -50,7 +50,8 @@ class CourseController {
                 res.render('courses/subpage', {
                     course: course.toObject(),
                     books: multipleMongooseToObject(books),
-                    videos: multipleMongooseToObject(videos)})
+                    videos: multipleMongooseToObject(videos),
+                    username: req.user})
                 })
             .catch(next);    
     }
@@ -61,7 +62,7 @@ class CourseController {
         Item.findById(req.params.id)
             .then(item => {
                 res.render('courses/item-details', {
-                    item: item.toObject()});
+                    item: item.toObject(), username: req.user});
             })
             .catch(next);     
     }

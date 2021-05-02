@@ -1,0 +1,73 @@
+[{
+  "_id": {
+    "$oid": "608e404ec00abd48bc73a93d"
+  },
+  "name": "intro",
+  "level": "beginner",
+  "description": "Khóa học giới thiệu chung về tiếng Nhật",
+  "img": "/assets/img/courses-subpage/beginner/japanese-intro.jpg"
+},{
+  "_id": {
+    "$oid": "608e4068c00abd48bc73a93e"
+  },
+  "level": "beginner",
+  "name": "hiragana",
+  "description": "Khóa học bảng chữ cái Hiragana",
+  "img": "/assets/img/courses-subpage/beginner/hiragana.jpg"
+},{
+  "_id": {
+    "$oid": "608e406cc00abd48bc73a93f"
+  },
+  "name": "katakana",
+  "level": "beginner",
+  "description": "Khóa học bảng chữ cái Katakana",
+  "img": "/assets/img/courses-subpage/beginner/katakana.png"
+},{
+  "_id": {
+    "$oid": "608e4085d5d84e383cbb55df"
+  },
+  "level": "intermediate",
+  "name": "vocabulary",
+  "description": "Khóa học từ vựng cơ bản",
+  "img": "/assets/img/courses-subpage/intermediate/vocabulary.png"
+},{
+  "_id": {
+    "$oid": "608e40a4d5d84e383cbb55e0"
+  },
+  "description": "Khóa học ngữ pháp cơ bản",
+  "level": "intermediate",
+  "name": "grammar",
+  "img": "/assets/img/courses-subpage/intermediate/grammar.png"
+},{
+  "_id": {
+    "$oid": "608e40bbd5d84e383cbb55e1"
+  },
+  "description": "Khóa học giao tiếp cơ bản",
+  "level": "intermediate",
+  "name": "conversations",
+  "img": "/assets/img/courses-subpage/intermediate/conversations.jpg"
+},{
+  "_id": {
+    "$oid": "608e40d8d5d84e383cbb55e2"
+  },
+  "level": "jlpt-n3",
+  "name": "vocabulary-n3",
+  "description": "Khóa học từ vựng JLPT N3",
+  "img": "/assets/img/courses-subpage/jlpt-n3/vocabulary.jpg"
+},{
+  "_id": {
+    "$oid": "608e40f7d5d84e383cbb55e3"
+  },
+  "description": "Khóa học ngữ pháp JLPT N3",
+  "level": "jlpt-n3",
+  "name": "grammar-n3",
+  "img": "/assets/img/courses-subpage/jlpt-n3/grammar.jpg"
+},{
+  "_id": {
+    "$oid": "608e411bd5d84e383cbb55e4"
+  },
+  "description": "Khóa luyện đọc hiểu JLPT N3",
+  "level": "jlpt-n3",
+  "name": "comprehension-n3",
+  "img": "/assets/img/courses-subpage/jlpt-n3/comprehension.jpg"
+}]
