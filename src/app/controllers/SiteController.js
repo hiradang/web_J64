@@ -3,17 +3,16 @@ const {multipleMongooseToObject} = require('../../util/mongoose')
 
 class SiteController {
     index(req, res, next) {
-
-        Course.find({})
-        .then(course => res.render('home'))
-    //     {
-    //         course : multipleMongooseToObject (course)
-    //      }))
-       .catch(next);
-
-      
-    //      res.render('home');
+        var username
+        username = req.user
+        // if (req.isAuthenticated()) { //trả về true nếu đã đăng nhập rồi
+        
+        //     username = req.session.passport.user;
+        //    // username = req.user
+        // } 
+        res.render('home', {username})
      }
+
 
     search(req, res) {
         res.render('search');

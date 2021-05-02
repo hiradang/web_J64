@@ -1,0 +1,67 @@
+<div class = "container-login" style = 'font-size : 1.5rem; margin-top: var(--header-navbar-height) '>
+    <div class = "login-input" >
+        <form method="POST" action="login">
+        <h1>Đăng nhập</h1>
+        <div class="input-box">
+            {{!-- <label for="exampleInputEmail1">Username</label> --}}
+            <i class="input-icon fas fa-user "></i>
+            <input class = 'form-control'id = "username" name = 'username' placeholder="Username">
+        
+        </div>
+        <div class="input-box">
+            {{!-- <label for="exampleInputPassword1">Password</label> --}}
+            <i class="  input-icon fas fa-lock"></i>
+            <input type="password" class="form-control" id="password" name = 'password' placeholder="Password">
+        </div>
+        <button type="submit" id= "submit" class="btn btn-primary btn-submit"  >Đăng nhập</button>
+        <div class="next-form" style="margin-top: 5px;"> 
+            <small class="font-weight-bold" style="font-size: 90%; font-weight: 600">Don't have an account? 
+                <a href = "signup" class="text-danger " style="text-decoration: none;">Sign up</a>
+            </small> 
+        </div>
+        </form>
+    
+    {{#if error}}   
+        <script>   
+                    sweetAlert({
+                        title: "Oops...",
+                        text: "Fill the username and password to login",
+                        icon: "error",
+                        button: "Done",
+                
+                    })
+                
+            
+        </script>
+    {{/if}}    
+
+    {{#if message}}   
+        <script>   
+                    sweetAlert({
+                        title: "Oops...",
+                        text: "Username or password was wrong",
+                        icon: "error",
+                        button: "Done",
+                
+                    })
+                
+            
+        </script>
+    {{/if}}   
+
+    {{#if signup}}   
+        <script>   
+                    sweetAlert({
+                        title: "Sign up success",
+                        text: "Login to continue",
+                        icon: "info",
+                        button: "Done",
+                
+                    })
+                
+            
+        </script>
+    {{/if}}     
+    </div>
+</div>
+

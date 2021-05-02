@@ -1,0 +1,69 @@
+
+<div class="container-login" style = 'font-size : 1.5rem; margin-top: var(--header-navbar-height) '>
+    <div class="login-input" style="height: 480px;">
+        <form id = "signupform" method="POST" action="signup">
+        <h1>Đăng kí</h1>
+        <div class="input-box">
+            <i class="input-icon fas fa-user "></i>
+            <input class = 'form-control'id = "username" name = 'username' placeholder="Username">
+        
+        </div>
+        <div class="input-box">
+            <i class="input-icon fas fa-lock"></i>
+            <input type="password" class="form-control" id="password" name = 'password' placeholder="Password">
+        </div>
+        <div class="input-box" >
+            <i class="input-icon fas fa-lock"></i>
+            <input type="password" class="form-control" id="confirm"  name = 'confirm' placeholder="Confirm Password">
+        </div>
+        <button type="submit" id= "submit" class="btn btn-primary btn-submit" style="margin-top: 40px;">Đăng kí</button>
+        <div class="next-form" style="margin-top: 5px;"> 
+            <small class="font-weight-bold" style="font-size: 90%; font-weight: 600">Already Sign up?
+                <a href = "login" class="text-danger " style="text-decoration: none;">Login</a>
+            </small> 
+        </div>
+        </form>
+    </div>
+
+    {{#if message}}   
+        <script>   
+                    sweetAlert({
+                        title: "Oops...",
+                        text: "Fill the information to signup",
+                        icon: "warning",
+                        button: "Done",
+                
+                    })
+                
+            
+        </script>
+    {{/if}}    
+
+    {{#if errorUser}}   
+        <script>   
+                    sweetAlert({
+                        title: "Oops...",
+                        text: "Username already exits",
+                        icon: "error",
+                        button: "Done",
+                
+                    })
+                
+            
+        </script>
+    {{/if}}    
+
+    {{#if errorPass}}   
+        <script>   
+                    sweetAlert({
+                        title: "Oops...",
+                        text: "Confirm password was wrong",
+                        icon: "error",
+                        button: "Done",
+                
+                    })
+                
+            
+        </script>
+    {{/if}}    
+</div>
