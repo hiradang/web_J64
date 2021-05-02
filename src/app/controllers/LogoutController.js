@@ -9,8 +9,6 @@ class LogoutController {
        res.render('home', {username})
     }
 
-   
-
 }
 
 module.exports = new LogoutController();

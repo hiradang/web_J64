@@ -28,18 +28,16 @@
 
                 <div class="course-details">
                     {{#each course}}
-                    <div class="course-details-item">
-                        <h1 class="course-details__title">
-                            <i class="fas fa-chevron-right"></i>
-                            {{this.description}}
-                        </h1>
-                        
-                        <a href="/courses/beginner/{{this.name}}" class="course-details__link">
-                            <div class="course-details-img">
-                                <img src="{{this.img}}" alt=""> 
-                            </div>
-                        </a>
-                    </div>
+                        <div class="course-details-item">
+                            <h1 class="course-details__title">
+                                <i class="fas fa-chevron-right"></i>
+                                {{this.description}}
+                            </h1>
+                            
+                            <a href="/courses/beginner/{{this.name}}" class="course-details__link">
+                                <img src="{{this.img}}" alt="" class="course-details-img"> 
+                            </a>
+                        </div>
                     {{/each}}
 
                 </div>

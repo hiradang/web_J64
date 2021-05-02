@@ -10,15 +10,15 @@ router.get('/', loginController.index);
 //     failureRedirect: 'account',  //nếu check không đúng thì redirect về link này
 //     successRedirect: 'home'
 // }));
+
 router.post('/', function(req, res, next) {
     passport.authenticate('local', function(err, user) {
         if (err) {return res.render('login', {message: 'Fail'});}
         if (!user) {return res.render('login', {error: 'Fail'}); }
-        console.log(user)
        
         req.logIn(user, function(err) {
             if (err) { return next(err); }
-            return res.render('home', {username: user, message: 'success'});
+            res.render('home', {username: user, message: 'success'});
         });
     })(req,res,next);
 })

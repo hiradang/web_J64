@@ -2,6 +2,7 @@
 
 .course-subpage.container {
     margin-top: var(--header-navbar-height);
+    border-right: 1px solid #ebebeb;
 }
 
 .course-subpage .course-title {
@@ -50,14 +51,11 @@
     margin-bottom: 40px;
 }
 
-.course-details__title {
-
-}
-
 .course-details__link {
-
+    display: block;
 }
 
 .course-details-img {
-    
+    width: 80%;
+    height: 60%;
 }

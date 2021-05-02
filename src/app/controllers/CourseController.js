@@ -8,7 +8,7 @@ class CourseController {
         Course.find({})
             .then(course => {
                 course = course.map(course => course.toObject())
-                res.render('course', {course});
+                res.render('course', {course, username: req.user});
             })
             .catch(next);   
     }

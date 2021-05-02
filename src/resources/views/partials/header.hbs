@@ -1,164 +1,162 @@
 <header class="header">
-            <div class="grid wide">
-                <div class="header__navbar">
-                    <a href="/" class="header__navbar-logo">
-                        <img src="/assets/img/logo.png" alt="" class="header__navbar-logo-img">
+    <div class="grid wide">
+        <div class="header__navbar">
+            <a href="/" class="header__navbar-logo">
+                <img src="/assets/img/logo.png" alt="" class="header__navbar-logo-img">
+            </a>
+            
+            <ul class="header__navbar-list hide-on-mobile-tablet">
+                <li class="header__navbar-item">
+                    <a href="" class="header__navbar-link">
+                        CNTT Nhật Bản
+                        <i class="fas fa-chevron-down header__navbar-icon"></i>
                     </a>
-                    
-                    <ul class="header__navbar-list hide-on-mobile-tablet">
-                        <li class="header__navbar-item">
-                            <a href="" class="header__navbar-link">
-                                CNTT Nhật Bản
-                                <i class="fas fa-chevron-down header__navbar-icon"></i>
-                            </a>
 
-                            <div class="header__navbar-select">
-                                <ul class="header__navbar-select-list">
-                                    <li class="header__navbar-select-item">
-                                        <a href="/japit/intro" class="header__navbar-select-link">Giới thiệu ngành học</a>
-                                    </li>
-
-                                    <li class="header__navbar-select-item">
-                                        <a href="/japit/story" class="header__navbar-select-link">Chuyện lớp J</a>
-                                    </li>
-
-                                    <li class="header__navbar-select-item">
-                                        <a href="/japit/japan-it" class="header__navbar-select-link">IT Nhật Bản</a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </li>
-
-                        <li class="header__navbar-item">
-                            <a href="course" class="header__navbar-link">
-                                Khóa học Tiếng Nhật
-                                <i class="fas fa-chevron-down header__navbar-icon"></i>
-                            </a>
-
-                            <div class="header__navbar-select">
-                                <ul class="header__navbar-select-list">
-                                    <li class="header__navbar-select-item">
-                                        <a href="/courses/beginner" class="header__navbar-select-link">Sơ cấp</a>
-                                    </li>
-
-                                    <li class="header__navbar-select-item">
-                                        <a href="/courses/intermediate" class="header__navbar-select-link">Trung cấp</a>
-                                    </li>
-
-                                    <li class="header__navbar-select-item">
-                                        <a href="/courses/jlpt-n3" class="header__navbar-select-link">N3</a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </li>
-
-                        <li class="header__navbar-item">
-                            <a href="" class="header__navbar-link">
-                                Thông tin Jobfair
-                                <i class="fas fa-chevron-down header__navbar-icon"></i>
-                            </a>
-
-                            <div class="header__navbar-select">
-                                <ul class="header__navbar-select-list">
-                                    <li class="header__navbar-select-item">
-                                        <a href="/jobfair/honor" class="header__navbar-select-link">Bảng vàng danh dự</a>
-                                    </li>
-
-                                    <li class="header__navbar-select-item">
-                                        <a href="/jobfair/company-info" class="header__navbar-select-link">Thông tin doanh nghiệp</a>
-                                    </li>
-
-                                    <li class="header__navbar-select-item">
-                                        <a href="/jobfair/conditions" class="header__navbar-select-link">Điều kiện tham gia</a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </li>
-
-                        <li class="header__navbar-item">
-                            <a href="" class="header__navbar-link">
-                                Văn hóa Nhật Bản
-                                <i class="fas fa-chevron-down header__navbar-icon"></i>
-                            </a>
-
-                            <div class="header__navbar-select">
-                                <ul class="header__navbar-select-list">
-                                    <li class="header__navbar-select-item">
-                                        <a href="/culture/food" class="header__navbar-select-link">Ẩm thực</a>
-                                    </li>
-
-                                    <li class="header__navbar-select-item">
-                                        <a href="/culture/festival" class="header__navbar-select-link">Lễ hội</a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </li>
-                        
-                    </ul>
-
-                    <li class="header__navbar-item">
-                            {{#if username}}
-                                <a href="" class="header__navbar-link">
-                                {{username}}
-                                <i class="fas fa-user-circle" style="font-size: 2rem;"></i>
-                                </a>
-                                <div class="header__navbar-select">
-                                <ul class="header__navbar-select-list">
-                                    <li class="header__navbar-select-item">
-                                        <div class="header_navbar-user">
-                                            <i class="fas fa-sign-out-alt header_navbar-user-icon" ></i>
-                                            <a href="logout" class="header__navbar-select-link">Đăng xuất</a>
-                                        </div>
-                                        
-                                    </li>
-                                </ul>
-                                </div>
-                            {{else}}
-                                <a href="" class="header__navbar-link">
-                                Tài khoản
-                                <i class="fas fa-user-circle"  style="font-size: 2rem;"></i>
-                                </a>
-                                <div class="header__navbar-select">
-                                <ul class="header__navbar-select-list">
-                                    <li class="header__navbar-select-item">
-                                        <div class="header_navbar-user">
-                                            <i class="fas fa-user header_navbar-user-icon"></i>
-                                            <a href="login" class="header__navbar-select-link">Đăng nhập</a>
-                                        </div>
-                                        
-                                        <div class="header_navbar-user">
-                                            <i class="fas fa-user-plus header_navbar-user-icon"></i>
-                                            <a href="signup" class="header__navbar-select-link">Đăng kí</a>
-                                        </div>
-                                    </li>
-                                </ul>
-                                </div>
-                            {{/if}}
-                        </li>
-                        
-                    </ul>
-
-                    <div class="navbar-icon show-on-mobile-tablet">
-                        <i class="fas fa-bars"></i>
-                    </div>
-
-                    <div class="navbar__mobile">
-                        <ul class="mobile-navbar-list">
-                            <li class="mobile-navbar-item">
-                                <a href="" class="mobile-navbar-link">CNTT Nhật Bản</a> 
+                    <div class="header__navbar-select">
+                        <ul class="header__navbar-select-list">
+                            <li class="header__navbar-select-item">
+                                <a href="/japit/intro" class="header__navbar-select-link">Giới thiệu ngành học</a>
                             </li>
-                            <li class="mobile-navbar-item">
-                                <a href="" class="mobile-navbar-link">Khóa học tiếng Nhật</a>
+
+                            <li class="header__navbar-select-item">
+                                <a href="/japit/story" class="header__navbar-select-link">Chuyện lớp J</a>
                             </li>
-                            <li class="mobile-navbar-item">
-                                <a href="" class="mobile-navbar-link">Thông tin Jobfair</a>
-                            </li>
-                            <li class="mobile-navbar-item">
-                                <a href="" class="mobile-navbar-link">Văn hóa Nhật Bản</a>
+
+                            <li class="header__navbar-select-item">
+                                <a href="/japit/japan-it" class="header__navbar-select-link">IT Nhật Bản</a>
                             </li>
                         </ul>
                     </div>
-                </div>
+                </li>
+
+                <li class="header__navbar-item">
+                    <a href="course" class="header__navbar-link">
+                        Khóa học Tiếng Nhật
+                        <i class="fas fa-chevron-down header__navbar-icon"></i>
+                    </a>
+
+                    <div class="header__navbar-select">
+                        <ul class="header__navbar-select-list">
+                            <li class="header__navbar-select-item">
+                                <a href="/courses/beginner" class="header__navbar-select-link">Sơ cấp</a>
+                            </li>
+
+                            <li class="header__navbar-select-item">
+                                <a href="/courses/intermediate" class="header__navbar-select-link">Trung cấp</a>
+                            </li>
+
+                            <li class="header__navbar-select-item">
+                                <a href="/courses/jlpt-n3" class="header__navbar-select-link">N3</a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+
+                <li class="header__navbar-item">
+                    <a href="" class="header__navbar-link">
+                        Thông tin Jobfair
+                        <i class="fas fa-chevron-down header__navbar-icon"></i>
+                    </a>
+
+                    <div class="header__navbar-select">
+                        <ul class="header__navbar-select-list">
+                            <li class="header__navbar-select-item">
+                                <a href="/jobfair/honor" class="header__navbar-select-link">Bảng vàng danh dự</a>
+                            </li>
+
+                            <li class="header__navbar-select-item">
+                                <a href="/jobfair/company-info" class="header__navbar-select-link">Thông tin doanh nghiệp</a>
+                            </li>
+
+                            <li class="header__navbar-select-item">
+                                <a href="/jobfair/conditions" class="header__navbar-select-link">Điều kiện tham gia</a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+
+                <li class="header__navbar-item">
+                    <a href="" class="header__navbar-link">
+                        Văn hóa Nhật Bản
+                        <i class="fas fa-chevron-down header__navbar-icon"></i>
+                    </a>
+
+                    <div class="header__navbar-select">
+                        <ul class="header__navbar-select-list">
+                            <li class="header__navbar-select-item">
+                                <a href="/culture/food" class="header__navbar-select-link">Ẩm thực</a>
+                            </li>
+
+                            <li class="header__navbar-select-item">
+                                <a href="/culture/festival" class="header__navbar-select-link">Lễ hội</a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+
+                <li class="header__navbar-item">
+                    {{#if username}}
+                        <a href="" class="header__navbar-link">
+                        <i class="fas fa-user-circle" style="font-size: 2rem;"></i>
+                        {{username}}
+                        </a>
+                        <div class="header__navbar-select">
+                        <ul class="header__navbar-select-list">
+                            <li class="header__navbar-select-item">
+                                <div class="header_navbar-user">
+                                    <i class="fas fa-sign-out-alt header_navbar-user-icon" ></i>
+                                    <a href="logout" class="header__navbar-select-link">Đăng xuất</a>
+                                </div>
+                                
+                            </li>
+                        </ul>
+                        </div>
+                    {{else}}    
+                        <a href="" class="header__navbar-link">
+                        Tài khoản
+                        <i class="fas fa-user-circle"  style="font-size: 2rem;"></i>
+                        </a>
+                        <div class="header__navbar-select">
+                        <ul class="header__navbar-select-list">
+                            <li class="header__navbar-select-item">
+                                <div class="header_navbar-user">
+                                    <i class="fas fa-user header_navbar-user-icon"></i>
+                                    <a href="login" class="header__navbar-select-link">Đăng nhập</a>
+                                </div>
+                                
+                                <div class="header_navbar-user">
+                                    <i class="fas fa-user-plus header_navbar-user-icon"></i>
+                                    <a href="signup" class="header__navbar-select-link">Đăng kí</a>
+                                </div>
+                            </li>
+                        </ul>
+                        </div>
+                    {{/if}}
+                </li>               
+            </ul>
+
+
+            <div class="navbar-icon show-on-mobile-tablet">
+                <i class="fas fa-bars"></i>
             </div>
-        </header>
+
+            <div class="navbar__mobile">
+                <ul class="mobile-navbar-list">
+                    <li class="mobile-navbar-item">
+                        <a href="" class="mobile-navbar-link">CNTT Nhật Bản</a> 
+                    </li>
+                    <li class="mobile-navbar-item">
+                        <a href="" class="mobile-navbar-link">Khóa học tiếng Nhật</a>
+                    </li>
+                    <li class="mobile-navbar-item">
+                        <a href="" class="mobile-navbar-link">Thông tin Jobfair</a>
+                    </li>
+                    <li class="mobile-navbar-item">
+                        <a href="" class="mobile-navbar-link">Văn hóa Nhật Bản</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</header>
 
