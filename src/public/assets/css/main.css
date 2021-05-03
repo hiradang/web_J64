@@ -46,15 +46,18 @@
     display: block;
 }
 
+
 .header__navbar-link {
+    display: block;
+    align-items: center;
     cursor: default;
     text-decoration: none;
     font-size: 1.5rem;
     color: var(--black-color);
     font-weight: 600;
     padding: 10px 0;
-    display: block;
     min-width: 100px;
+    text-align: center;
 }
 
 .header__navbar-link:hover::after {
@@ -73,6 +76,7 @@
     opacity: 0;
     transform: translateY(20px);
     transition: ease 0.2s;
+    min-width: 80px;
 }
 
 .header__navbar-link::before {
@@ -94,6 +98,11 @@
     margin-left: 5px;
     font-size: 1rem;
     top: -2px;
+}
+
+.header__navbar-item-login-logo {
+    font-size: 1.8rem;
+    margin-right: 4px;
 }
 
 .header__navbar-select {
@@ -157,6 +166,7 @@
     margin-right: 8px;
 }
 
+
 /* Mobile menu */
 
 .navbar-icon {
@@ -205,13 +215,15 @@
 }
 
 .content-heading {
-    font-size: 3.2rem;
+    font-size: 2.8rem;
     color: var(--primary-color);
     font-weight: 600;
+    text-align: center;
 }
 
 .banner-img {
     width: 100%;
+    border-radius: 8px;
 }
 
 .banner {
@@ -226,6 +238,20 @@
 
 .intro-text-part {
     margin-right: 10px; 
+    position: relative;
+}
+
+.intro-text-part::before {
+    content: "";
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    background-color: #c01111;
+    border-radius: 50%;
+    z-index: -1;
+    left: 37px;
+    top: -21px;
+
 }
 
 .intro-see-more {
@@ -233,7 +259,12 @@
 }
 
 .intro-heading {
+    display: block;
     margin: 10px 0 20px 0;
+    background-color: #c01111;
+    color: var(--white-color);
+    padding: 20px 20px;
+    border-radius: 20px;
 }
 
 .intro-desc {
@@ -241,36 +272,67 @@
     text-align: justify;
     line-height: 2.4rem;
     color: var(--text-color);
+    border: 1px solid #c01111;
+    border-radius: 16px;
+}
+
+.intro-desc__text {
+    display: block;
+    padding: 20px 20px;
 }
 
 .intro-img {
+    display: block;
     width: 100%;
-    border-radius: 2px;
+    border-radius: 16px;
     box-shadow: 0 0 2px #ccc;
+    border: 1px solid #c01111;
 }
 
 
 /* Courses */
 
 .container .courses {
-    background-color: var(--content-background-color);
+    border-radius: 16px;
 }
 
 .container .courses-heading {
+    display: block;
+    font-size: 3rem;
+    color: white;
     text-align: center;
-    padding: 32px 0 20px 0;
+    padding: 25px 0 25px 0;
+    background-color: #c01111;
+    margin-bottom: 70px;
+    border-radius: 16px;
 }
 
 .container .course-item {
-    /* min-height: 450px; */
     position: relative;
+    border-radius: 8px;
+    padding: 30px 30px;
+    border: 1px solid var(--primary-color);
+}
+
+.course-item::before {
+    position: absolute;
+    content: "";
+    width: 50px;
+    height: 50px;
+    top: -30px;
+    left: calc(50% - 24px);
+    background-color: var(--primary-color);
+    border-radius: 50%;
 }
 
 .course-img {
+    border: 1px solid #ccc;
+    border-radius: 8px;
     width: 100%;
 }
 
 .course-name {
+    text-align: center;
     font-size: 2rem;
     font-weight: 600;
     padding: 20px 10px;
@@ -284,20 +346,42 @@
     padding: 0 10px 20px 10px;
 }
 
-#bootstrap-overrides .course-see-more {
+.course-see-more-wrapper {
+    display: flex;
+    justify-content: center;
+}
+
+#bootstrap-overrides .course-see-more-reverse {
     text-decoration: none;
-    font-size: 1.6rem;
-    text-align: center;
-    color: var(--primary-color);
+    font-size: 1.8rem;
+    color: var(--white-color);
     font-weight: 600;
     text-align: center;
     display: block;
-    padding: 10px 0 20px 0;
+    padding: 10px 70px;
+    border-radius: 8px;
+    background-color: var(--primary-color);
 }
 
-.course-see-more:hover {
-    transform: scale(1.2);
-    animation: liner .2s;
+#bootstrap-overrides .course-see-more-reverse:hover {
+    background-color: #2b3441;
+}
+
+#bootstrap-overrides .course-see-more {
+    text-decoration: none;
+    font-size: 1.8rem;
+    color: var(--white-color);
+    font-weight: 600;
+    text-align: center;
+    display: block;
+    padding: 10px 70px;
+    border-radius: 8px;
+    background-color: #2b3441;
+
+}
+
+#bootstrap-overrides .course-see-more:hover {
+    background-color: var(--primary-color);
 }
 
 
@@ -311,6 +395,13 @@
 
 .story-desc {
     text-align: justify;
+    font-size: 1.4rem;
+    line-height: 2.4rem;
+    color: var(--text-color);
+    border: 1px solid #c01111;
+    border-radius: 16px;
+    padding: 20px;
+    margin-bottom: 28px;
 }
 
 .story-detail {
@@ -318,13 +409,31 @@
 }
 
 .story-heading {
-    margin-top: 30px;
+    position: relative;
+    display: block;
+    margin-bottom: 20px;
+    background-color: #c01111;
+    color: var(--white-color);
+    padding: 15px;
+    border-radius: 20px;
+}
+
+.story-heading::before {
+    content: "";
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    background-color: #c01111;
+    border-radius: 50%;
+    z-index: -1;
+    right: 37px;
+    top: -21px;
 }
 
 .story-img {
     width: 100%;
-    border-radius: 2px;
-    box-shadow: 0 0 2px #ccc;
+    border-radius: 16px;
+    border: 1px solid #c01111;
 }
 
 .story-see-more {
@@ -334,20 +443,41 @@
 /* Japanese culture */
 
 .culture {
-    background-color: var(--content-background-color);
+    
 }
 
 .culture-heading {
+    display: block;
+    font-size: 3rem;
+    color: white;
     text-align: center;
-    padding: 32px 0 20px 0;
-    margin: 0;
+    padding: 25px 0 25px 0;
+    border: 1px solid #2b3441;
+    background: #2b3441;
+    border-radius: 16px;
+    margin-bottom: 70px;
 }
 
 .culture-item {
     position: relative;
+    padding: 30px 20px;
+    border: 1px solid #2b3441;
+    border-radius: 8px;
+}
+
+.culture-item::before {
+    position: absolute;
+    content: "";
+    width: 50px;
+    height: 50px;
+    top: -29px;
+    left: calc(50% - 24px);
+    background-color: #2b3441;
+    border-radius: 50%;
 }
 
 .culture-item-heading {
+    color: #2b3441;
     text-align: center;
     font-size: 2rem;
     font-weight: 600;
@@ -361,27 +491,20 @@
     padding: 20px 10px;
 }
 
+.culture-item-wrapper-img {
+    text-align: center;
+}
+
 .culture-item-img {
-    width: 100%;
-    border-radius: 5px;
+    width: 75%;
+    border-radius: 8px;
     border: solid 2px var(--border-color);
+    margin-bottom: 20px;
 }
 
 .culture-see-more {
     bottom: -50px;
     padding: 20px 0;
-}
-
-/* Honor students */
-
-.honor-heading {
-    text-align: center;
-    margin: 0;
-    padding-bottom: 36px;
-}
-
-.honor-student-img {
-    width: 100%;
 }
 
 /* Footer */
@@ -516,9 +639,9 @@
 
 
 .post__title {
-    font-size: 22px;
+    font-size: 24px;
     color: var(--text-color);
-    margin-bottom: 9px;
+    margin: 30px 0;
 }
 
 .post__content {
