@@ -5,7 +5,6 @@ const morgan = require('morgan');
 const handlebars = require('express-handlebars');
 const passport = require('passport')
 const session = require('express-session')
-const bodyParser = require('body-parser')
 const cookieParser = require('cookie-parser')
 const flash = require('connect-flash')
 const localStrategy = require('passport-local').Strategy;
@@ -25,8 +24,12 @@ app.use(
         extended: true,
     }),
 );
-app.use(session({secret: 'keyboard cat'}))
-app.use(bodyParser.urlencoded({extended: true}))
+app.use(session({
+    secret: 'keyboard cat',
+    resave: false,
+    saveUninitialized: true,
+}))
+
 app.use(passport.initialize())
 app.use(passport.session())
 app.use(express.json());
@@ -47,11 +50,16 @@ app.use(flash())
 app.set('view engine', 'hbs');
 app.set('views', path.join(__dirname, 'resources', 'views'));
 
-
+var urlpre = "http://localhost:3000"
 app.use(function(req, res, next) {
     if (req.session.isAuthenticated) {
         res.locals.lcname = req.session.passport.user
     }
+    var url = req.headers.referer 
+    if (url != "http://localhost:3000/login" || url != "http://localhost:3000/login") {
+        urlpre = req.headers.referer           
+    }
+    res.locals.pagepre = urlpre  
     next()
     
 })

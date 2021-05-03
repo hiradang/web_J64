@@ -23,10 +23,10 @@
     
     {{#if error}}   
         <script>   
-                    sweetAlert({
+                    Swal.fire({
                         title: "Oops...",
                         text: "Fill the username and password to login",
-                        icon: "error",
+                        icon: "question",
                         button: "Done",
                 
                     })
@@ -37,7 +37,7 @@
 
     {{#if message}}   
         <script>   
-                    sweetAlert({
+                    Swal.fire({
                         title: "Oops...",
                         text: "Username or password was wrong",
                         icon: "error",
@@ -49,19 +49,7 @@
         </script>
     {{/if}}   
 
-    {{#if signup}}   
-        <script>   
-                    sweetAlert({
-                        title: "Sign up success",
-                        text: "Login to continue",
-                        icon: "info",
-                        button: "Done",
-                
-                    })
-                
-            
-        </script>
-    {{/if}}     
+    
     </div>
 </div>
 

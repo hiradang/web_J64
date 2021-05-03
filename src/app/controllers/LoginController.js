@@ -21,8 +21,10 @@ class LoginController {
             res.locals.lcname = user
             req.session.isAuthenticated = true
             req.logIn(user, function(err) {
-                if (err) { return next(err); }
-                res.render('home', { message: 'success'});
+                if (err) { return next(err); 
+            }
+            res.redirect(res.locals.pagepre)
+            //res.render('home', { message: 'success'});
             });
         })(req,res,next);
     }

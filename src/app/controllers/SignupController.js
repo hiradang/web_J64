@@ -27,7 +27,7 @@ class SignupController {
                     }
                     else {
                         account.save();
-                        return res.render('login', {signup: 'Done'});
+                        return res.render('signup', {signup: 'Done'});
                     }
                 })
             } else {
