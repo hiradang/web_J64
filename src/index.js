@@ -4,7 +4,7 @@ const app = express();
 const morgan = require('morgan');
 const handlebars = require('express-handlebars');
 const passport = require('passport')
-const expressSession = require('express-session')
+const session = require('express-session')
 const bodyParser = require('body-parser')
 const cookieParser = require('cookie-parser')
 const flash = require('connect-flash')
@@ -25,7 +25,7 @@ app.use(
         extended: true,
     }),
 );
-app.use(expressSession({secret: 'keyboard cat'}))
+app.use(session({secret: 'keyboard cat'}))
 app.use(bodyParser.urlencoded({extended: true}))
 app.use(passport.initialize())
 app.use(passport.session())
@@ -47,8 +47,16 @@ app.use(flash())
 app.set('view engine', 'hbs');
 app.set('views', path.join(__dirname, 'resources', 'views'));
 
-route(app);
 
+app.use(function(req, res, next) {
+    if (req.session.isAuthenticated) {
+        res.locals.lcname = req.session.passport.user
+    }
+    next()
+    
+})
+
+route(app);
 app.listen(port, () => {
     console.log(`app listening at http://localhost:${port}`);
 });

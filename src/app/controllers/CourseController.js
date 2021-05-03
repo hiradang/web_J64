@@ -8,7 +8,7 @@ class CourseController {
         Course.find({})
             .then(course => {
                 course = course.map(course => course.toObject())
-                res.render('course', {course, username: req.user});
+                res.render('course', {course});
             })
             .catch(next);   
     }
@@ -18,7 +18,7 @@ class CourseController {
         Course.find({level: 'beginner'})
             .then(course => {
                 res.render('courses/beginner', {
-                    course: multipleMongooseToObject(course), username: req.user});
+                    course: multipleMongooseToObject(course)});
             })
             .catch(next);   
     }
@@ -28,7 +28,7 @@ class CourseController {
         Course.find({level: 'intermediate'})
             .then(course => {
                 res.render('courses/intermediate', {
-                    course: multipleMongooseToObject(course), username: req.user});
+                    course: multipleMongooseToObject(course)});
             })
             .catch(next);
     }
@@ -38,7 +38,7 @@ class CourseController {
         Course.find({level: 'jlpt-n3'})
             .then(course => {
                 res.render('courses/jlpt-n3', {
-                    course: multipleMongooseToObject(course), username: req.user});
+                    course: multipleMongooseToObject(course)});
             })
             .catch(next);
     }
@@ -50,8 +50,8 @@ class CourseController {
                 res.render('courses/subpage', {
                     course: course.toObject(),
                     books: multipleMongooseToObject(books),
-                    videos: multipleMongooseToObject(videos),
-                    username: req.user})
+                    videos: multipleMongooseToObject(videos)
+                  })
                 })
             .catch(next);    
     }
@@ -62,7 +62,7 @@ class CourseController {
         Item.findById(req.params.id)
             .then(item => {
                 res.render('courses/item-details', {
-                    item: item.toObject(), username: req.user});
+                    item: item.toObject()});
             })
             .catch(next);     
     }
