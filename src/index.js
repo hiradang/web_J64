@@ -51,15 +51,24 @@ app.set('view engine', 'hbs');
 app.set('views', path.join(__dirname, 'resources', 'views'));
 
 var urlpre = "http://localhost:3000"
+var count = 0
+
 app.use(function(req, res, next) {
     if (req.session.isAuthenticated) {
         res.locals.lcname = req.session.passport.user
-    }
-    var url = req.headers.referer 
-    if (url != "http://localhost:3000/login" || url != "http://localhost:3000/login") {
+        count ++
+        if (count == 1) {
+            res.locals.loginsucc = true
+        }
+    } else {
+        count = 0
+        var url = req.headers.referer 
+        if (url != "http://localhost:3000/login" && url != "http://localhost:3000/signup") {
         urlpre = req.headers.referer           
-    }
-    res.locals.pagepre = urlpre  
+        }
+        res.locals.pagepre = urlpre  
+    }  
+    
     next()
     
 })
