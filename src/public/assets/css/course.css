@@ -68,13 +68,18 @@
 
 
 /* Subpage */
+.card {
+    padding: 18px 18px 0 18px;
+    border-radius: 8px;
+    border: 1px solid #2b3441;
+}
 
 .course-book .card-img-top {
     display: block;
 }
 
 .course-book .item-details-link {
-    min-height: 360px;
+    min-height: 278px;
 }
 
 .item-details-link:hover {
@@ -85,4 +90,21 @@
 .course-book .card-title {
     color: var(--text-color);
     font-size: 1.4rem;
+    line-height: 1.4;
+    height: 4rem;
+    text-align: center;
+}
+
+.btn-info {
+    margin-top: 20px;
+    display: block;
+    color: var(--white-color);
+    padding: 5px;
+    font-size: 1.6rem;
+    background-color: var(--primary-color);
+    border: none;
+}
+
+.btn-info:hover {
+    background-color: #2b3441;
 }

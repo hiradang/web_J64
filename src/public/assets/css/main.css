@@ -681,6 +681,7 @@
 }
 
 .post__performer {
+    margin-top: 28px;
     padding: 15px 0;
     border-top: 1px solid #ccc;
     font-size: 12px;
