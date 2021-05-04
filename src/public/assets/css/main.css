@@ -152,6 +152,7 @@
     font-weight: 700;
     display: block;
     padding: 15px 0;
+    cursor: pointer;
 }
 
 .header__navbar-select-link:hover {

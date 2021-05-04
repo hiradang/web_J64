@@ -99,7 +99,7 @@
                             <li class="header__navbar-select-item">
                                 <div class="header_navbar-user">
                                     <i class="fas fa-sign-out-alt header_navbar-user-icon" ></i>
-                                    <a href="/logout" class="header__navbar-select-link">Đăng xuất</a>
+                                    <span class="header__navbar-select-link" onclick="logout()">Đăng xuất</span>
                                 </div>
                                 
                             </li>
@@ -155,6 +155,23 @@
     </div>
 </header>
 
+<script>
+    function logout() {
+        Swal.fire({
+            title: "Are you sure",
+            icon: "question",
+            confirmButtonText: 'Logout',
+            showCancelButton: true,
+            confirmButtonColor: '#3085d6',
+            cancelButtonColor: '#d33'
+            
+            }).then((result) => {
+                if (result.isConfirmed) {
+                    window.location = '/logout'
+                }
+            })
+    }
+</script>
 {{#if loginsucc}}
 <script>
     const Toast = Swal.mixin({
