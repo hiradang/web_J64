@@ -657,6 +657,10 @@
     margin: 30px 0;
 }
 
+.post__content-img img {
+    width: 100%;
+}
+
 .post__content p,
 .post__content p span,
 .post__content ul li span {
@@ -702,18 +706,26 @@
 .posts-highlight__list {
     background-color: var(--white-color);
     list-style: none;
+    border: 1px solid #ccc;
+    border-radius: 2px;
     padding: 0;
     margin: 0;
 }
 
 .posts-highlight__item {
-    padding: 15px 20px;
+    padding: 15px 10px;
     border-bottom: 1px solid#e5e5e5;
 }
 
 .posts-highlight__link {
     text-decoration: none;
     display: flex;
+}
+
+.posts-highlight__item:hover{
+    opacity: 0.8;
+    border: 1px solid var(--primary-color);
+    border-radius: 3px;
 }
 
 .posts-highlight__img {

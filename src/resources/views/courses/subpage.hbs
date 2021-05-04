@@ -1,45 +1,60 @@
-<div class="">
+<div class="page-container">
     <div class = "course-subpage container">
+        <div class="wrapper">
+            <h1 class="course-title">{{course.description}}</h1>
 
-        <h1 class="course-title">{{course.description}}</h1>
+            <div class="course-book">
+                <h1 class="title">
+                    <i class="fas fa-check course-goals-icon"></i>
+                    Sách tham khảo
+                </h1>
+                <div class = "row">
+                    {{#each books}}
+                    <div class="col l-3 m-6 c-12">
+                        <a href="{{this.linkBuy}}" class="item-details-link" target="_blank">
+                            <div class="card" style = 'max-length: 200px; margin: 5px 10px' >
+                                <img class="card-img-top" src="{{this.image}}" alt="Card image cap" style = 'max-length: 500px;'>
+                                <div class="card-body">
+                                    <h5 class="card-title">{{this.name}}</h5>
+                                    <a href="/courses/beginner/{{this.linkBuy}}" class="btn btn-info">Chi tiết</a>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    {{/each}}
+                </div>
+            </div>
 
-        <div class="course-book">
-            <h1 class="title">Sách tham khảo</h1>
-            <div class = "row">
-                {{#each books}}
-                <div class="col-lg-3">
-                    <a href="{{this.linkBuy}}" class="item-details-link" target="_blank">
-                        <div class="card" style = 'max-length: 200px; margin: 10px 10px 10px 50px' >
-                            <img class="card-img-top" src="{{this.image}}" alt="Card image cap" style = 'max-length: 500px;'>
+            <div class="course-video">
+                <h1 class="title">
+                    <i class="fas fa-check course-goals-icon"></i>
+                    Kho video
+                </h1>
+                <div class = "row">
+                    {{#each videos}}
+                    <div class="col l-3 m-6 c-12">
+                    <a href="/courses/beginner/{{this.slug}}/{{this._id}}" class="item-details-link">
+                            <div class="card" style = 'max-length: 200px; margin: 10px 10px' >
+                            <img class="card-img-top" src="https://img.youtube.com/vi/{{this.videoID}}/sddefault.jpg" alt="Card image cap" style = 'max-length: 500px;'>
                             <div class="card-body">
                                 <h5 class="card-title">{{this.name}}</h5>
-                                <p class="card-text">Description.</p>
-                                <a href="/courses/beginner/{{this.linkBuy}}" class="btn btn-primary">Chi tiết</a>
+                                <a href="/courses/{{this.slug}}/{{this._id}}" class="btn btn-info">Chi tiết</a>
                             </div>
-                        </div>
+                            </div>
                     </a>
+                    </div>
+                    {{/each}}
                 </div>
-                {{/each}}
             </div>
-        </div>
 
-        <div class="course-video">
-            <h1 class="title">Kho video</h1>
-            <div class = "row">
-                {{#each videos}}
-                <div class="col-lg-3">
-                   <a href="/courses/beginner/{{this.slug}}/{{this._id}}" class="item-details-link">
-                        <div class="card" style = 'max-length: 200px; margin: 10px 10px 10px 50px' >
-                        <img class="card-img-top" src="https://img.youtube.com/vi/{{this.videoID}}/sddefault.jpg" alt="Card image cap" style = 'max-length: 500px;'>
-                        <div class="card-body">
-                            <h5 class="card-title">{{this.name}}</h5>
-                            <p class="card-text">Description.</p>
-                            <a href="/courses/{{this.slug}}/{{this._id}}" class="btn btn-primary">Chi tiết</a>
-                        </div>
-                        </div>
-                   </a>
-                </div>
-                {{/each}}
+            <div class="post__performer">
+                <span>
+                    04/05/2021
+                    <span class="sep">|</span>
+                </span>
+                <span>
+                    Bởi Bình Đặng
+                </span>
             </div>
         </div>
     </div>

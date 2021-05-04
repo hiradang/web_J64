@@ -1,18 +1,25 @@
 /* Course info */
 
 .course-subpage.container {
-    margin-top: var(--header-navbar-height);
     border-right: 1px solid #ebebeb;
+    background-color: var(--white-color);
+    border-radius: 2px;
+}
+
+.course-subpage .wrapper {
+    margin: 10px 40px;
 }
 
 .course-subpage .course-title {
     font-size: 4rem;
-    margin: 100px 0 20px 0;
+    margin: 10px 0 20px 0;
+    padding-top: 60px;
     font-weight: 700;
+    display: block;
 }
 
 .course-subpage .course-description {
-    font-size: 1.4rem;
+    font-size: 1.6rem;
 }
 
 .course-subpage .course-goals {
@@ -26,7 +33,7 @@
 }
 
 .course-subpage .course-goals-item {
-    font-size: 1.4rem;
+    font-size: 1.6rem;
     margin-bottom: 10px;
 }
 
@@ -37,8 +44,7 @@
 
 
 .course-subpage.posts-highlight {
-    /* margin-top: var(--header-navbar-height); */
-    margin-top: 100px;
+    margin-top: 10px;
 }
 
 /* Course details */
@@ -58,4 +64,25 @@
 .course-details-img {
     width: 80%;
     height: 60%;
+}
+
+
+/* Subpage */
+
+.course-book .card-img-top {
+    display: block;
+}
+
+.course-book .item-details-link {
+    min-height: 360px;
+}
+
+.item-details-link:hover {
+    opacity: 0.7;
+}
+
+.course-video .card-title,
+.course-book .card-title {
+    color: var(--text-color);
+    font-size: 1.4rem;
 }
