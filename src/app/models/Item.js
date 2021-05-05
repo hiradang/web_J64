@@ -9,8 +9,9 @@ const Item = new Schema({
     videoID: {type: String},
     type: {type: String},
     name: {type: String , minLength: 1},
-    image: { type: String, minLength : 1},
-    slug: {type: String, slug: 'name'},
+    image: { type: String},
+    linkBuy: {type: String},
+    slug: {type: String},
   });
 
   module.exports = mongoose.model('Item', Item);

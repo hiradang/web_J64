@@ -1,0 +1,67 @@
+
+<div class="container" style="margin-top: 100px;">
+    <h1>Tạo khóa học</h1>
+    <form method="POST" action="/courses/{{items._id}}/update?_method=PUT"> 
+    
+    <div class="form-group">
+        <label for="name" class = 'label'>Tên khóa học</label>
+        <input type="text" class="form-control" id="name" name = "name" value="{{items.name}}">
+    </div>
+
+    <div class="form-group">
+        <label for="slug" class = 'label'>Mô tả</label>
+        <select class="form-control" style = "height: 40px"id="slug" name = "slug">
+            <option>{{items.slug}}</option>
+            <option>intro</option>
+            <option>hiragana</option>
+            <option>katakana</option>
+            <option>vocabulary</option>
+            <option>grammar</option>
+            <option>conversations</option>
+            <option>vocabulary-n3</option>
+            <option>comprehension-n3</option>
+            <option>grammar-n3</option>
+        </select>
+    </div>
+
+    <div class="form-group">
+        <label for="level" class = 'label' >Trình độ</label>
+        <select class="form-control  " style = "height: 40px" id ="level" name ="level">
+            <option>{{items.level}}</option>
+            <option>beginner</option>
+            <option>intermediate</option>
+            <option>jlpt-n3</option>
+        </select>
+    </div>
+
+   
+    <div class="form-group">
+        <label for="type" class = 'label'>Thể loại</label>
+        <select class="form-control" style = "height: 40px"  id="type" name ="type"  value="{{items.type}}">
+            <option>{{items.type}}</option>
+            <option>book</option>
+            <option>video</option>
+        </select>
+    </div>
+
+     <div class="form-group">
+        <label for="videoID" class = 'label'>VideoID</label>
+        <input type="text" class="form-control" id="videoID" name = 'videoID'  value="{{items.videoID}}">
+    </div>
+
+    <div class="form-group">
+        <label for="linkBuy" class = 'label'>Link mua sách</label>
+        <input type="text" class="form-control" id="linkBuy" name = 'linkBuy'  value="{{items.linkBuy}}">
+    </div>
+
+    <div class="form-group">
+        <label for="image" class = 'label'>Hình ảnh</label>
+        <input type="text" class="form-control" id="image" name = "image"  value="{{items.image}}">
+    </div>
+
+    <div>
+        <button type="submit" class="btn btn-primary" style="font-size: 2rem;">Submit</button>
+    </div>
+     
+</form>
+</div>

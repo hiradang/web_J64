@@ -9,7 +9,7 @@ const Course = new Schema({
     name: {type: String},
     description: {type: String},
     image: { type: String, minLength : 1},
-    slug: {type: String, slug: 'name'},
+    slug: {type: String},
   });
 
   module.exports = mongoose.model('Course', Course);

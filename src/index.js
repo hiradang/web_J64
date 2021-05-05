@@ -11,6 +11,7 @@ const localStrategy = require('passport-local').Strategy;
 const expressValidator = require('express-validator')
 const Swall = require('sweetalert')
 const hbssection = require('express-handlebars-sections')
+const methodOverride = require('method-override')
 const port = 3000;
 
 const route = require('./routes');
@@ -32,6 +33,7 @@ app.use(session({
 
 app.use(passport.initialize())
 app.use(passport.session())
+app.use(methodOverride('_method'))
 app.use(express.json());
 //HTTP logger
 // app.use(morgan('combined'));
@@ -42,7 +44,7 @@ app.engine(
     handlebars({
       extname: 'hbs',
       helpers: {
-        section: hbssection()
+        sum: (a, b) => a+ b,
     }
     }),
 );
@@ -59,6 +61,9 @@ app.use(function(req, res, next) {
         count ++
         if (count == 1) {
             res.locals.loginsucc = true
+        }
+        if (res.locals.lcname == 'ADMIN') {
+            res.locals.admin = true
         }
     } else {
         count = 0

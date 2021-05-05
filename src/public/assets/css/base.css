@@ -57,3 +57,7 @@ a .see-more-icon {
 .see-more-link:hover .see-more-icon {
     display: inline-block;
 }
+
+.label {
+    font-size: 1.5rem;
+}

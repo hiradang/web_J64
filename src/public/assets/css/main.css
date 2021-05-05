@@ -47,6 +47,7 @@
 
 .header__navbar-item:hover .header__navbar-select {
     display: block;
+    
 }
 
 
@@ -123,6 +124,7 @@
     background-color: var(--black-color);
     padding: 10px 0;
     border-radius: 2px;
+    min-width: 180px;
 }
 
 .header__navbar-select-item {
@@ -777,5 +779,9 @@
 .input-icon {
     padding: 15px 0;
     font-size: 2rem;
+}
+
+select.form {
+    height: 40px;
 }
 

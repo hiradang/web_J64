@@ -16,7 +16,7 @@
                                 <img class="card-img-top" src="{{this.image}}" alt="Card image cap" style = 'max-length: 500px;'>
                                 <div class="card-body">
                                     <h5 class="card-title">{{this.name}}</h5>
-                                    <a href="/courses/beginner/{{this.linkBuy}}" class="btn btn-info">Chi tiết</a>
+                                    <a href="{{this.linkBuy}}" target="_blank" class="btn btn-info">Chi tiết</a>
                                 </div>
                             </div>
                         </a>
@@ -38,7 +38,7 @@
                             <img class="card-img-top" src="https://img.youtube.com/vi/{{this.videoID}}/sddefault.jpg" alt="Card image cap" style = 'max-length: 500px;'>
                             <div class="card-body">
                                 <h5 class="card-title">{{this.name}}</h5>
-                                <a href="/courses/{{this.slug}}/{{this._id}}" class="btn btn-info">Chi tiết</a>
+                                <a href="/courses/beginner/{{this.slug}}/{{this._id}}" class="btn btn-info">Chi tiết</a>
                             </div>
                             </div>
                     </a>

@@ -18,6 +18,14 @@ router.get('/jlpt-n3/:slug/:id', courseController.beginner);
 router.get('/jlpt-n3/:slug', courseController.showList);
 router.get('/jlpt-n3', courseController.jlptN3);
 
+//ADMIN 
+router.get('/add', courseController.add);
+router.post('/add', courseController.store);
+router.get('/admin', courseController.admin);
+router.get('/:id/update', courseController.update);
+router.put('/:id/update', courseController.saveUpdate);
+router.delete('/:id', courseController.delete);
+
 router.get('/', courseController.index);
 
 module.exports = router;

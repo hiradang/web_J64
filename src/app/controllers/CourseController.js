@@ -1,6 +1,7 @@
 const Course = require("../models/Course");
 const Item = require("../models/Item");
 const  {multipleMongooseToObject } = require('../../util/mongoose');
+const {mongooseToObject} = require('../../util/mongoose');
 
 class CourseController {
     // [GET] /courses/
@@ -67,6 +68,43 @@ class CourseController {
             .catch(next);     
     }
 
+    add(req, res, next) {
+        res.render('courses/add')
+    }
+
+    admin(req, res, next) {
+        Item.find({})
+            .then(items => res.render('courses/admin', {
+                items: multipleMongooseToObject(items)
+            }))
+            .catch(next)
+    }
+
+    update(req, res, next) {
+        Item.findById(req.params.id)
+        .then(items => res.render('courses/update', {
+            items: mongooseToObject(items)
+        }))
+        .catch(next)
+    }
+    delete(req, res, next) {
+        Item.deleteOne({_id: req.params.id})
+            .then(() => res.redirect('/courses/admin'))
+            .catch(next)
+        
+    }
+    
+    store(req, res, next) {
+        var item = new Item(req.body)
+        item.save()
+        res.redirect('/courses/admin')
+    }
+
+    saveUpdate(req, res, next) {
+        Item.updateOne({_id : req.params.id}, req.body)
+            .then(()=> res.redirect('/courses/admin'))
+            .catch(next)
+    }
 }
 
 module.exports = new CourseController();
